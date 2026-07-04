@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitBalance — Member Program</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,__FAVICON__">
+<link rel="apple-touch-icon" href="data:image/png;base64,__FAVICON__">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="FitBalance">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAxBklEQVR42u19ebglVZFnxMnMe+97VVSxVAFVAmWBDiIIWoJoieLStjg6foyMqEi3C+PCiIMLNIti9ziOPfMpaivtOC50I+o4+OmMPaODyyAiirKItFgWiywFSBVFUVDLe/fezDwxf+RdMvOcExm53PteYeVXX33v3Zc3l3PixIn4RcQvsLdjMwwPRCQiREx+Tf9s/pp8kv7u6BzXF9Pn526X/Cl3/dxdcrfIXcf8ufDI3Tr9Q+6a1kEwnyR3ZfPidQ5zDJlxyL2Ra9YqP4M5d5nTAPzcd1wPYf08fd3RmZbb2MTFlNTCybDKsTnZrpkwf02fbD4/s8CYEWvksL4OP5imVFnX5+iZ5UvROsum4GaGhUjB4jjk0zOJidx78EdpJYcpjWUux9wUulSra9ewrn7zBFNQrJrGtbEym3XuhOSvo++aiy93X9cDpN+XsRzMF2emxxxbU21bzQzhYkt/y2WBuB7PqtvSg5n/KwGlBcu8rtDGYnYE65Sk92mXsFbbLxgTjb9+btwLX8E6YswtRtd3mYnmyekzGRG0T60x8YWvL5H+3Nwxz0xEvmuTtq4M6xtaLZVC491UD4VCbOoGXmnxtq1cJqyKRLJ98PPqMgHNBWOVYKsbwY9hobi4vITR6EnEDgAUYIHGcpmBpvVntRytasm14HiN6JJgRkTSz8nr/PSZ1o2GeRKXmW/dtgptCYlBYxU404/J+bkuD8m8oPUBGDEdjd74OjBJ472+gz0dp4HxsyT7+97Devi8Tk7E0PRReaEx92zr3swsgsIZlezapv3h0sqFN81tai4AzGVcMyACb9Lxu4+5uVs9FcYMsNoSLpuYt7Fy1/FNKTGlh4GCJEqLMTVcQ8wge1Zjgr9OoQFRaGpY1wNvwPKYk8RSkTyza9s1t+/Cfdy6gcqNk+wr2DRWIUYn3/JyOs8KPUicLH5MeZijUCfl9BnvzPM4uxA04WERcxWVnYLcd3M2lgtoGEmSE083TElzcxsBpH5Zl8HlDwrNzFJuC3NTq6RK7PpSMZZC0Mi1giWqnfewrCh52ac1F0yhHy3BpV0LKf2cyrWRmx9OwmidtIEvn5L6j+RSZoV4JqMRqz2M0ERh/lr2vub5vuQRTVe20IrM7f3W/a4QjpP8WjiIvMllfdlCY9y19bisxsIAgwvNF8qQVYtLHjK3CTDwodUJc2FdiKAYMXfpc0magxUXGel2PoYgV5BCALBwYTArNS1tEgMgjdsxUan0BU3d5jL4rCKeAwsLN1lz78vdmpEBftGmbCxBSMcMrskNI6vBLlGz/OLjoWp+Z+ERQqHI8srJhXkWIgsu4NFUpYxHVm0Td02QSwYKZgRgsWQ3TPqYqDG350KmkxsWn9/4ctaGRFqbeo3CGJYZYAd3SMeFRBTGX03bgo/W55a+xC3g91+JRW811IQqit/fma3DBeVk4IbCgQN3YhcIEsfKJlJK9Lw18ugCIySYu2ni8J6KFarNXdCFs8hRQKGyzCHjpUaYyQsVelfmyPtpGI1JcGBcDPlYSLJ/XDiqxLNjdIkkfdSq/CQxbJcbaB1MoVIpKx+8AnYFf6zZvxVyu80AoO9aPVprpZQrbOQKltXZ1/kkAh7RYFItJDEySY4QA5Fb/5rLmHCtXv51ChetXNaFe4hQTVozptL3chrvaana003UCZmxizl9o3L6ZJPGe6FQ88ZBoW7n84FMI8kaPeUtX7ltITd7nZUC7Hrjjao62x+veptymyQ2n7VQKvPuuewGa4Z1/RIiMxGMGXFTRKxjZ919ylZZuQDosg6Ey8xqHNSQ+5V15FiSTGFdjWOTK0HecXgwbm3aREgjxaNPCtPimJQ6Bijnc5gkkbiyQBRTzWbmZo1OLgyN14fB5LFI4U2ZnUoSVuIQCoIqhtSTxtjiZ6UpqZ0+9DqJWrqyEuznUNAKbhEIMtea3Rf49dSIGe6ykKyQRNmsmAadgAmlP4A70sxAUWNBSoop5JavC26YvqcmCbYXDqjVuDQzMgoH1IrIlLK3eNy/rAUmsZwY5ILB8+Rwl89XjACbxVZYJZcDzaxnSmqPXPiQfCJdIJDLRBVmXri8h9wQNei1uZC/QlIJa0qqdaW5XqGUmvddSDfPZcDj1DwUXk1LCSeJ8doYUJfxnHmw23Sc+WRiYb5Q5Tw7HivhbRsJu0khVFsMkE5tv38SH3+6hWIIPm8I8wLLRE7kCeZlc0pL1foVbuuFaA0T8XBVs5n1UvK1V0pdVVD/rmJXV6zJWl1sJX7Kfc8XQsY8+lw/nUGu86y7bdmkCcmDWasjhUHGyqnrTGaiXEdWiEZI6uALrRQ73FDW25cLwaLaIhnnoEIoF4qqTyswwslD4/xKkN9O+JAMFUBeeVsroSuojUlMv5wNrNQ1K0Q/GLVkhkGZoZ+0qSoUESafR57pwBO7wZ9OavLeY8qHL/HAoWriToMOJrMchbuYq25T8qaMySUv362cglHoCZlQEZMbYg6dUIu70mXBCNugfCusgEi5cDxGOJg0X2tNfWG+tlkkKEcHcs5d+gkLWR5qLjlmRhiuLBftgKuaHiqFW6wvbjxVJeO9ESBHvhp4X7XQyRh+n5KVNPyB4/QCR54CU2jJ685JeMd5Sio3qw/v4BeaYkJbLSNnhZXQezBCN9BSiY8y+AQwtabGHoxFgh35L5i52vg0NP9ME7YW9gAbq7IpUOi6m5EmITG6ZIvhooqoEBSgIohhlNWIKSlCAgACAhr8ZSyAKWEci14W5hz/hIiDr1Dy5UApVAhKgdY6CuNYl3K3S+0DZnDQBG8rxyitG72kPCQZDd+c1JqOMVMAIwwtC014brkEwc9vuOkTn/qs7ymw5UZb2S6FW7nri0phu91eMjuz777LV69efcTaNWvXrnnK6tXL910OQHEUxWEkXMD8ii00giV15BWEWEhbl1RC+8y0VQjQAlsAU1g+KmHqyqlDu5ek1CNbH/nZ9de32x0cayj3oTC5wUgZZRwOlM4BEWkiICKgwA+WzM6sXn3wc4579vr1z1//guetWrWS4jjsh5UxPBcaboWmGu+FUSrrmtsK5X4p4xsXliZL/lTKAyci0Bo0tVqtdqtVZIsNbC+LNA/NJTGzzWhHpeTn+W7vrrvv/f3Gu//7Vd865CmrX/7yl51+2qnHHftMJB2FESWE6DUAUqZiQO6iCuj5nKFP51a4eDpTNAt6JUoLUfB2mLOfZH9yPIhh2qPv+51Ou93ubN6y9R/+8Wuvf9NffuD8i+++74FgdknW6HuyHYo3DCvUnEg4SXJGQIVwaa64I59XnQVdCml9XLxzpSjI+DM9z5uZ6YSR/uZV3339G9/ylcu/qjX4nho6AAWjJHlm82WFNJMu/iZrZbL1+ulZSD7JMPqZbkXZuCk/LhJGpFJJ+ybb0+DrCmG4zVSuYxGixKODSb5N23IzM53t2x//8Ec++t73n/fItu2tdnuQJs6KyALuAzwLi3U6Mjzv6e/XZwqUlxDlzqx/9ynQTzI1knyEhIgASCnV6cz80/eufvu73nvPps1Bu21KZNnyoUaAa/PKI2HKpcvyX0feCpFU7zT4bsLGL+LJ5mJkjSitNEpXliuQiGZml9z22w1nvePdd9x5Z6vlAUBZm65BkSp7EVe6xxh8WWwGeP03T66gFC5IZnCJVhcErSDY+PuNZ5/zvoc2Pxq02vLK1ZqLpEinNnBTv/JDCD3YwmQB658qUGdntAhiGIa7du+a6cxwp8kvKBYppZTylELFF6oPrknU7sz8bsOdl/z1xz9/2ad9GJxdbcwbz2CDkhxdGZ/MbN3L3EB+G2FfU2i6sWzydT/wb77lN9+46juddlvnNq+Mi0/D3QcTxGoIXGFyZgafSkLXAEB6GIoEIlAARKQ1EUC319u6desDDzy4efPm+fme32r5vo9F74VK9Xu989//nve99+x+v794IowuRnsmjDFaMBnBanBxyPOlGP+2uqoHrZQXdGZBaxtWlI4NDj8YhxGHKDwOBY9sX7EdWuswinc8seO+++6//hc3Xf3DH93+uw2IKgh8YAt94zhut7xvffPK4571zCiMJiFYZQeWr1UsaGj6ZBWsUW4MaHRKFGYGJnNGLgBEw6/h8Fcc6ztKnUREgKCU8n0f/NbOHTu+9/0fXvb5//aHe+9vt9vAtVmE+e7cq055xZe/cBlEoSb95BGsKWjgwoBgKSuhWjG7Ww4NQaqPPivlt1ubNz/6sf/8yW9/53+2W520bjRJ0pXCr3/1H9afuC7s9ygj7gu/G5r7HWd9EnmXXHSe0BcVNreVwwrWzyeEbhQMH/t7mq2prAMfR9E+S2df+Yo/m5+bu/nmW5XvWwUr+bXf7/d786865RWgdTXHswKsIOyjyzM02aBgG4VrtaojyV+t7VgrcHvwNF1le1gSZv6ZDrawVYRlgwCMoxh09KELz3/zGW/odeeJ7I3cETEI/J9ed/09997v+T5jzlXoB1Z/+kzZ4NebYjpXm5Mk4WYt+xrW+SvQl2Tci6TxXFesifmQyZrnmeJHq0hrjUgXXXjeMUcfFUWhU/kpb9v2J376s59jEEw0Pl1Nn5kodI7xJd/9a1GhuqzJErTancAPfN8P/CDwgpYfBMN/gw/9VuC3kr+mfm0Ffubk4b9W4Ldaftv3W5NONNBxvO/yped/8NyW7zM6ApX66c+uj8MI9nDeB99l2/P1+aW6BPCFZS5TMfe5p/xN2+/71k1f0WGotYaE1BkHZRGjjHYiGti8IyU0/BUANOkEQEBCAko+9DwvjvRr1p1+zFOeE0WRXNcWVjflNvew233Zi9e/+EXrf3ztzwLftwJ4vufdccddj217bP99l8WNlvpU3igLeYSswWmfuSvD5VUKJpUkfRcWuCHi47sf/dFt30lslCFoQOkfABBIZ3b2UVr7+EzAHD5KoEGfeORLFPgAUWXjkk/eTX4I2u3Xve51P/7Jz1zX9Dxv69at92/atOKA4+IiE75aPrucL76QkthsIDD4Vi7nHcr0x+Lfp5EeJ7m9BJBmOjNaD7J/ZcwtYxMs+TVjNg2VXowxFplpct4s5ojC6PnPW7dq1UFbHtnqe571u/Pd/h/uuf/445+LUVTzdlZhkuuwQpYvVxAFRTmWi8XMQgKIY9JDc5iKRCHJURmdQ1ZnEAgAokhTrJsaAWYQdByvXLH/MUcfpeOYeezNW7aAUpOYiLIk1vLJzQmZslJGNZVl1mjzX0RQWmsabnYVcmvyEgCIgJo0aU2Cd2liTEh56uhnPoO/1JYtj4DWDeLVjZMLlzDe+TSEUrxFzPYhQSvsAWwEAEKVAE1jY8kMO5QdHRyUHGLZvY+5LPeaRIcdeogLAEu+tf2JJ4D0qHC2Gg80b3TXT7xxtZUbxLXS+snqp1QDLa2rvHDRM+cPpQtdhSh1XATJwze3H9Hy5cv5YRyViDGQdS5QwfSvb2orZEr38jwXTC+dNBouoRzma2Sb0cBAgESahisZEJ0cMuYLDY2qMXynISuL7jc1VxovxK7SXwIAUDMzM0ops5va6HZRHI1sPuEtrE3dG2/yyyj1TAQF8E+LH8u09glhmlAkAgBphej5HgsFK6Y1wR4DkPJmQeX+1U37mwNdy1fjlaNXTJgXADzlMV9itgAoSbUIREB6584nSFPSuM9yPmKn3QGFZRMcJCXwNRu6WkfbYi+me+lYo2BMoJG3VOrv6DaXTqVrQYfzavnQOXaaPECVYO8EilARKkBATF9Evgu47AHnRRBAeVseeTQMQ2cDUaKlS2ZhUHNrid4K7bmc4Wgt6JDrAmvsGJzFXeRLxFbI5SfsGlc3+VhzizIBuQBRoRqYZXkzbQCNosIkYY+AdKyHAD00gug6q0kBwPM3PfBQHMdaa3CQea488EBAJD3Yuovzn4rUFd+/GQTccUyvF8tpaIR0JNBAg02FyuwjAynImqgjU4mQgAhRoY6BNKEiQCTKy9YgQ5RIAaJCrXVMGmkgiFC1Q64Q+0aAOIzuuOsPnseUsdDaNYclgDCW6U1fx0qpUydn0dO0JxKv2ZPQkYh0HM+09vnAv7pov5kDY4ogLVU4yl9NzsaER0uTJgJEeuqKp8dxf9LP7nnq4Ycf3rjxTj9wjTx12u21Tz2UdIx7MrODP00DvN5CwSS6CdqhohGICMk79tAXrFy6iuIQUvFmcjL4DfyCOI601ibtjBD4LbSFB9tgEPzihl9s3ry53W5bvxXH+rDDDlmz5rA4CgEJhwlzjdjaE8DkwAV8+tUQ9jrbQQ2sIG3IZzfQBIfyAAKK4n4U93Qc1btJXRDIPEchRjF99//8IJNgkbVd+v3+s4879oCVK6L5eQAkmFTmjHBSmGIKDq3EVKzQlThRmOMrJ0upJbKDjAarxhm/gud7QM2UIRQi72X9XL8V3HLLrb/85Y1B4FsDsgnJ4skvekGaBTWXeF1WuJtKYrYqYIaoZ6oAaQO6kIqSWxarWYIAYRh//gtfnu/2XRIZx/Fhhx76oheuj/s92MMPLlYIbsqhQttImC9VbmZgHDF2KUiswJcmW6+lcv/NI5hd8u3/9b+vufa6loNkkIh63e6rT3nlwatWjShxGfb2BahlYgtVzH0fG1MnRdJTp5o+OVcVx6CqjzePBguLPqwv22q3f33Lbz72t58iNzek1rT//vu98Q2n6agH4OxCPeWjGosEAioJ3lpH35QqvS1UWQSUAAcM1qUVVh5Ek9bLhWiLAXpozcxsvPPucz9wwfbt2313iLDf67/5jNOPPPKIKIysOtcU7sI5GrwO5S0Ea/EZY1qZFmGRkZ21sXJh6nRHZ6vx6CJ9bGpx2C7I493DYgqqolbNCkehUcyMTzAze+NNt77tnefcc+99rVbglKp+/xlHPu2dZ701Dvu8PJWyOoThOGE7HWG3USKCPTm7wWrFUwNVXNnFTGZuKRV/UaFqtduRpi9/5cq3nvXuTfdvarn5m+M4brWCSz584YErD4hjDU+Kw5doDleLpWqdF6vpMBxNqmGnZfQE1rlRkkiKNAjrIQzi0xpSpAujaCMYKZSInq8QA78737/mx9d86fIrbvjVLQpVq9VmvJx+v/vB95/38pe9OJyfm8gSxMbARTEfO/nVLJ5J036aVCdjrzDfPCh9Jo4y9uSaiwBAYas1m1hoQDEQDfMdEkxfpxQiAXqDX3AMmBFRpPXuufl773vghl/dePUPfnTrrbdpTUEQsLsY9nrdt/3lme9519vD3jzVm/XK49zUmWmZ8RnRydhPNKSMEtyyvi9jy8CkhG9/mEGa4VqlcUgwgatLlD0qRE3epz7z9/dvepAoRgDlKQRMcutHKpIGUUVM8lYHuiAJ5SOEYbjtscce/uPDD/3x4V275jxP+X7geehi206evB/23/TGf/M3H7kIAaz1HA22qmNmWZKkVe7uZCumYACIZBCbyoHh59uKfloDfUTZJ2TtrLRHMvokjsLvff/7//zbDZ7vDZzOMUMEULp+LHu/1AMPeCI9T3U6bdMcy72U1jrsd9/1zrMuvvB8D4mpBluEgAJ/qWQK/GpoG5+dMyHoBe1piRm8lEqKb/Kz1rFCbLdbQdCaHGyEOEgK7fW6y5cvO/+SC9565ptAa77iGSacDcBrh4r5w9YOq1YlTCPjOcv0Itp6aWgk2dqTyl8DB9b06BkAALWmtGFNSLytaukhBYM+TMkuV2JpyrCJzGIj0Fqf+LzjP3zh+cefsC7qzmlqWEpgKmkpvI1FRD4Y6Z3yna4s+CmnBHYlsmJqO0y2fktnDigWkPFXYLAtKuWZwGPh/JXVzXEcHX30UZ/59KVPPXxNPLcrzbXbDPlqeSulWp47v3flS+x5X6/yBpcjNJO8ElmtKURASnUzxVEn1Yx2BJKEommULIFACMpTA3xVPPRmH+vCr/i+f+edd735zLd84r984pFtjwczszhwAkTA5jQtJ0mRPrgiE7SgDQQm0vCi+rNMjaISH3jwj5d+6nOnnvaGK668UitstWYaoz1dNAa+koz3FEzIEgAEFekhEOVjZcQIyYoGF8ZSzLB6YRMhIvI8rzOz9MGHNl/0oY+efc5f3bvpoaDTqYYw1+y6Yw0ajqAcXmm5QnDj7l/F+8XE9E2ZGkAYkVTbzK9EllD5HhAhliStjMM4jkhrZ6GcITpmIXJJXiFqtVrtdufqH1x9+hln/r+fXNeanU28xlJhjMphRInxU7YPTXpY/Gmqx8KLcN1Qxsz+lCK+MjPDsN3qKK+FOp8j4FxnCnQU9br9bq/XHoNYNEqAxqQSMbmFTjuVGYKkBKT3PIVKwZBe0GWBjT5vt2e2bNl69jnnXnLxBX9xxhvCfm/SoGghuF1h1vJOAzZRpVOtXYBcWMdZ7YQJvaNZ/jV05rHb62744237zxzQj3o4wiaMDT39q9axjumIZ6ztzM62ggARB11ShvzGlgdLXATEgQQON+g4jnfu2rV9+/YnHn8ijvWw5Yk2zb/0THiePz/f/9AlHw3D+O1vOaPf642WUIOIVEURKXmR0c97XPkXZnG4zCee54Xx/Me//UGFmAT4aMhNCgMsDYfIFQ4r3CEKQ6TWpRd/7RkHHRNG3cwtcNg0Ok16NILlUk1RksIyrfXcfHf7Y9v/cM+9t9x62y9vvGnDhjt2z3Xb7Q7Po+Z5ntb6P/zHj++zdMnrTz8tnN8Ne/jh19c0kw5IG9d3I5ZD152AiFCN+R4G1nmSJ5icp3WcWGboIaJGHXqKdFI+DePQBCX6BrOijTAuoRkY/ohAhLjvPkv2W7b06U9be8qr/nx+99wtt9565de/ec21183P94MgMDflcYM/pbSmj3z0b1evWvXC9Sf0e72yM1I51Ma3KDfpxwopJCGNY025irC0FZ8gYTjydJBIjXCsVEw6QdDVMH6SoKVDHYUqwdkRMJExhYAAXuCBUlrHBMNaoCER5eDn1D8Nyb/hB6NDAxBqoljrfr/fn5/zPTzpBc/7wmWf/ubXrjj5RS/odruxJmbH9zy184kdF3zoIw9v3up5fgXhEE6l1Zm1guSmVy56KqZKR4jrVH75CtcZI+U0psjir1+oTXFQraoH2fQlO3UXDk7YC6Ow/9x1z7r8i39/ycXnz7SDKI6toGJyuyAI7rrrrk9e+nfoBQ32B6kHTYsWf67SRMECta+pOFXifJhCapPMhwRaxzCJcUAEwH6v5yH8u7Pf8cUvfG7VQSvDMGImrNOZ+c53/+kXN9wYGNXSi2eaCp9E1VwEZTs01ZGpQVHhOJeUrJd3UGgMwK185RYNclDrF41Zw1YD+55AE/Xn505+8fovfeGyVQetHJFB5rsQIKDy+mH82c99fn6+K29xlTmHmqyvNEE7yfkKsh1RJMkwFQhkG1woyKqo0kVBCWSg9Qg5aFYr5Iq3w7m545511Kc/+Z+WLJnR7g57Qat1w69uvPba64JspnwdsLpCLWRZ1qQUB2k2CC1MzWFo4yeoq9HlFQ6aAzgefmBUp39NPqERjg+AniKcRhE1IfZ7vZNOWv/hD/0VptRvfjCJojj+6jeuimKtUKF4rQ7GwRHyL7tsqqMECEqyGoREwg3WU5i9C0ec3BVo780ytdT25aSom9wR9ftnvPH1L33JSb3ufLrkLu2RtVqtm2/+9cY77vYCUUN4xricjlGVni8q2/1rDzLzR+CQK3kobXtRHMc6mtqbEZECOvc975qdabvSRxFx167d1/zkOvSDRZL6IAm/jmE5q+BDNtsmZepaDMPKS0RSfZ9a0MMGzPkAs2l2D/Sa2RpztKuM1RgiaUBSA2RrKiuHiMJ++Oxjj3nln/9ZFIaucfB8/9rrru/OdxEawH3qlxOXKIs1cazcjOZLfqs+ayGrkatg3GLekvO1E9np9/v9sB/FUaSjMAr7qX9hFIVxFMZRPwzDKAzjsBf2+2G/1w8R/cLyXfeWWg0rpjPOOGN2dolr7/Y874477njooYc8T9V3uiun5Ujw2MxWQCxVpD05GCvqKnnxmttLQASFoAhiw3gf1M5orTutZW97yQeXd5YS6Xzcd1jMNQxMAxHFsUZPKdU+aPmqWEeSJBNhRRRvKSNCFMXPOfaopx+xZsPGuzzPsxDOKtyxY8fGjXcesXYNRHFZMLORJFJXmIjLLkYAQCdrch0auDrr2OrfpVYDWdPrkrfRoBV6Lz36NStmDwYdpldCjvoolYE/oMiOo26sY5dJAGW6LsotkiVLZk84/vhb//l3M52OBbICDKP49xs2vvrVrxxl3k0ok931LvJVlPv2Hkhuy5jqiMqHfm9X3JrTlO2eZW87MOTUijHdL3OaDspzn7sOLr+CHPAsorpv04N7HMktml6hSaIiIX0Utu+uYIfllRNk8rFSXxy0rkBEVB7YVr9drAawkXZxBTIJyiaAV1ZP6Cg8fM3qZfvs48qlVp7a/MjWcEjwN83s8FKAc37i0DDemTTcUoq3JqBiCwCkqmqcQolEgy7R6ViCiYqlUZ+cccOYq4zrWhFL1HrlyhX7LFs6ypIwb7pt27Zut4eLBnFgcmLTaqhYY9W5MZM8zldNWSmXIJPva5JC4pCwmzDVypDhsnK17mCWWbPzpAH22WfZsqVLR8QNxtPC3O65Xq83SBegVP1bPTCzmkvoGkzDc3/Sdf/CCa/XxrebwPeXLVtG2gURQRxHvX5/YUukKhw+4+vVRz7tvVLdu6foplybrgIIw+o/M3H3wi6NjSwFpRSj17XWOcoQKvJJG3xsvlUlc03FQy8ug9r1oYsmniFmLmfyj98n20h8mMGpMU3lYMmvdQGwZWnTG9FeSR+yKBpHkwwIG1KRh3xmjpwsuHI4ueIqQvIrPIEV+hM2EuLreUTfpQxWacolZpEFpilynRKrsvkndu2I2Ov1du3c5WqaTERKeaNk+fri0ojqEnSpEDD6FdIZFJZ/8TleJd7TuMzoDYcu4ThdDsj+Rmk+j6kZLq5VpxB37Ni1/fHHzdaEIyt4ZqbTarckhRLytm/VupcztxjNwohUR5WS2YW0BslOI5Ox2yZuvjeN6Hreww9v3rFzp3KMrSaYnZ1pt9owyTUwCYdX8VLvKjnPgRbpn5ncwrIoq0PArBKfaj8jIECHetmYZfEX5zWVuv3227vdrusEreOVK1d0Oh2SGVISW1ZoSUu0TNqwzrFd+BUmm0+fqFwuUlBOPQjvkUFXqcZdCAETpEchUpbWorCtKO8J1nSTcz7p6Aet9Q033qwU1xRzzaGHeJ6Kw3I1g/XRad4EMlkRobARZuVcxDpWsMTBSVg+Qcfk7rMwYslOa1yXlTOJ7AwJx1jyVJ7nPfjQH2++5Tee74M9okBEdMThhzcCdgjTgKuZQ6YWVMJLCLvaVd4shC8zZmLAXGdLSv3gfIVqz1m/AMGWCgeqFXzv+z/cvOURT7lmC9rt1jHHPBNI19yfJaxMEpPLWrSSTt0r9gphMVWxjSWGeLtrRI6F1i7zi+RARE95j217/JtXfcfzvBzsO1r9WutDn7L6aUc8NY6iEUPEopgJwWMo18IyM0iZdkWNvLArkphNYeVa94xbrWLdRWItwSiV9G31hMYp4a3gH6/4+l133+v7vutRoyg64fh1+++3n47j+jXZwqZw/L4k53nzeXQqzYqetlfqt1bn0S9nD8SC1CQEII1AmnINp5jgktUAMnGj+qRCo0EP2u1f//q2L375K37gcYse4RUvfyl6irCAZ9y1tq3sI7wucLk7kmaz+Z7QvFMgEab6zEz86Aip5DFpAzEsk6gAHloN/Apv52J9BgC/5W3bvvOSv/nYjp272+2O6wpxHB966CEnPG9d3E+IvixebeEslEWkrVMscXfy/OQweXLbKRtqBNziXnAbJfCD3XPd8y+46NbbbmekCgCiKDz11NceeODKONaNoL5TLt1TjKGQdiVc2dx8O8ZG+pCPmjENi+It1sz41wHIRfKWfBJLQjgrfKJEq9N+fNfc+z5w4ff/7w/b7i5zABDH+oD99j39tFN1FIGM46SUWnVlNQpryAr6brq2QtcWywAQkjaKhdCOBKnDgf2U18DpnjYMKWOFbkRp49IMxEr29+R/v9367e0bLvnrj9948y0zM7P8KuqH4emnn7Z2zSH9Xk+IYPNbtsuElQy7KwmK3518CW4p3G5LiYhEOnP+IBFQpnOg89mTBAezh4Lr1syUWG15Zm2k7ogApBR6rWDXzvmvX/k/PnfZZY89tqPdboODyhsBFFK/Hx2xds07/+1ZibqSK8im0mYKDTW+AqBAsBhJcpUi8auZd76KbWFIsYACaq2Byx9EicmfQxOYeIXVErCSoSdV2Mrz0FOg/G1bt179gx9/9RtX3X77Bs/z2sM8BeduopFIn3vOuw86aEW/qC9mKZKPSdAwu2JiuAeS25YGcFrtDngKtB62t3SA3Ol+cUPKl8z5A+ZJzPyc0JviMIxJOozj3XPzjz766O9/f/cNN9507XXX33PPPZ7ygyDIkXjbPA/sdufPPPMNp/3r106o2+rUDr/SZNnDcAwW4trgy4RUKcmhTAqanbUigKPeu0opIrr0M5+9575N7SCI4jjV1jJliVGqMfCIqHbI/qA1ZTqApqVt/DMlBUK9fu+Jx3dsfXTbli1bHn9ip9ba94NOZ0biPSBit9s94fhnX3zBeQhS2EUI0FhRQ7Mut6xD4NwTzQYCuQh8KdSEMYTN7a9SG2kspIocENMOXUhS3jXX/vznN9w0M9MBoHQX0+wL0rBb74DdKddfM7sz0ihLR+vU3IzoN5XyPJV0F7eS2lltuF6vd+SRT/+7T39i331mo6hvQgx1QuZMz0DGxRGS5FpP84WyIpGJwnSLwvRWKILVrb9lSghh6BcOW3l1Op3ZmU673XKZzNnnz3cvZyaDRdOwEJtO37rfD484/LD/+rlLD3/qYf3e/AKmK5Z1oh2elg3HMgvuFkfsE8dtT7LWkVP2hnwhZUguRYGwojEpl3c0Nzf37OOOueLyLx115NP6vW6aY7wRqLlm7kk1lFXxty+lIRkiUCY+JX7WIf+6YXvlLpfrXmFFStMgsCQ0W3lKzDolGNcUgSbd7/de8+p/efmXPn/E2sPCfn8xuT3FWVLMxuWbipqtvmjgKSWdgp3rQCmtYwasGzTdHFg2kLXJS/BASxCTekA89nrd/fbb99+fc/ZZbz3TV5DDQoV2ugRKKIUsCo2zAqMewS9M1a0QNJDY9Yw9K7+sqagTTzC9JVnLQcv2bmhw0RNRv98PfP+UV7z0vPefe8yxR4e9bhwXjznjuBX3IHH4VXUqdvjp9q3aArPZvQ1qUXJzUBd9EQgIFRIgEA3Ah0wLy4Qja9AZHQe9bdDkKLRu9MJXcBUAFgqoJtBxFEVhK/BPWv/8d5z1Fy97ycmeAh4FlaQS1d8oGrT3a+FYC3UohCDw+1GoNeWYrIejpnWsEzRr4W2U5J/WURRpHSvPP3DlypeefNKpr331iScc3+4EYa8Xxnsa85XUzwK/wjqY0AZRkPkOGGs9Nz+ndYyApHWqBReiQoUYhn0flyrlD7tSAmnd63Z7vT4C6DGKlQoOjUZiUJo/5l7LViymuAGHXxsWZg8Kh5Jb0qhTFFKr1V6+bOmqVQevW/ecF554wrp1z1m9+mDQcdjvhz09ZV97mtW5mDTCZMpbwU3rUxn2ddkBvKOgQS+fOeBF/+IUQkoAcTVMkRn2o9Sx1ktm9m8HHRomyBNFJ73wxFWrn+L5no7jLNxuta/N6kgy5d46MgkuGvj+kqVLVxxwwEEHrjjkkEMOWX3wgStXzC5dCjqOoyjsdXMwl8TKsdaxQdW+lXWMWonsJnAg9ndu4ZFApofd1BYBImrSCjzf8wb5WFkQEgG0JoUICsMoIiIcCoQfBMr3hyU8OMbwrc5MDs8aCJs01W4Iz+JwLeg4HuzOjEmes6YbnOmpbn8Zt4ywt2NzIbRf1qVy+YC1B8UZxE1vaTpPx5bdyqZuaUk2gQqs0lMTMmHOe2Zh1Gk2vgimyfwDmdg5EUw/QrKYVct0Dh/Y9GJrol/ZLFhrUZQEeqlf2155adZsAyYnM5/Cq9UBuvk9x7SPM4LFFAlZwWg5u4FVEOXQS4ODLnQghABp5Ulq8KXkGG9lPBLYlm8mAUlKeGSpyRI8sBHGepgYmZiEU2rSCrL+ZUvlsUwNM7KWcC4kue2e1Uhs72GdQdck+vxuKufmq79SKzibwFZUF9b7mjVkICNjqoAeVSjPmpr5JbSx5L2DyBrSsc6TiWO58ktL8dLI8YhGiq1dfzIJBCReRc7IqEO+2tSm2TgSwTsZ1hKxBMdSwGbVuLomlbK4hUzJriwu6y1c36rPVOt62VxsIGeTSagNrIs7d8LksiokO4/Z4bHUHdNXU2nlb+X/kwhBBQKTdPZEqVmRzKVkUKz9KYDhfBNQ1ctHwMq/4hIv1+vU5TYves46jGiq7I3luXJ7jwU/FhCk9UHQ35GpPYfyBNHWjczK0lk2ZwscJF4mVmJmm7koBWrOjdD8MhP6XMMrHPY6NpzEiSkYFspmN5QaHaZbpGnXu2pUXJIkT+Yp1YWAcR343UpoazbiEfOvw0t8gyz2FdK4nYl+FQKiVhlnupLmCDYaiWyYERKXf8dUSvLU+OCOHBd+sXFUQpLDPolN0LWGrYpJya1sV5MxV5Wzs97B7YRKdrTCUWaKbF2vU8F7YFzumlPbYEvzSdvBbkaqSr10mOW+IIZ8qYKWRkxd+cKdmhFd+ZXLYgpSmcsl+jEWeiklMelRrsY1APUiklCS3GuhUjqnnLRjYd0hUjz9t2m0CqUqVxfKd1auANKAQTNkvp4cADP5jMyGLoxqLMtRWEctSRTMQmXTj6c72Qol8+rKubb6IKWCd676WN79YRrsWt14fhGnz2RcKqsV5UqHLwhtjVITseIsNqiW5Dmi/EaRHocnW+vevcciOXxhdxS+AFcY7pXgchVWZA5HMZHGUn4fA4y5tHg1DqAp20CFf61Qp2+dOABAQF9uxNTJ7axgMpcyzCsCxOVroJl8wFL+b/3aDp7QVS7ipVZCYQxgWEyhlVBc6sO4TTXtYDRrZSRJ0uzZmtktwS3rswgJL1KYY9Is9MNSHqOyJi9PWjNXdgPlJNjStpo2RnjXM5thOxDjsdWGSJgAUn9tVxM7JiPjSWW8/4lXXC0u451JmCzMyZewt8strVKm+hSSDiSujCs2OuUV0mzIWf46jJWpGEzI2leNYZFkgMTcXiZpTca0P3DtfRKmOdeTC4feNHqE0yDp5lDZ5BKW55cyD2r1PUUjbYb3tIV5PHUWn7CNSoVgfn3XpGz0uim/laH4KvsWzUZ7pKzJe4+9xlxjNpbLkqhcpGCGOCYUNVuQ8Zp+1nV9apZGRqws9uuDLb5W8x1AAH9XMPCnQ6XE0+zUJM+pw0xRttdrI5kXfKiX4d1UFQzMQl5aq1S5bEOX3e3KKyylRSooGD7bUY5OuXIVJU1QXQ5HqR7VfNKKHDtknCRRJXTuTozq49eNaVZX625d3y5ekB2TobASWhf8V0rpLSZFu9A5s/Y247pRZNJSihoI7D32Gvh1jXdrQDEHO5XNz2yqiApsVVDQEFjarJMhjL1KUr4q8A5bVVQhimvVsky/5sLhonQlNNOwVbglm8VAuc240Bji+w1bDYiaDGmTUzD8+/L7YNngYG6yCpttuawxvkUDIwa5iLOlSZP5iKZKsxaAu2LDuRxlECTy1iwMXzxbodxGrjYUPDZkjrzLcpLc2krL47wmpQTLVH0u+10OcckTB1yb3SSM68WARVV+5sqpySMhK/VFRh0wrESwR2c3/Gl6G3vKW1u4G0wDsCzaUYo4wMUcIeRP45muqimPaoZ82c6RZRWesGKlrPo0e+pa4Qw5NJr8qKzYhsT1ELIoCYt6rRt/uqhLiJfWz4wrRRwnQVbr7IaTzu81t7DKSQ0W1mTeL7U69vL2AhWCjHXYvxuxhwpZVlwetMSBmhzSUVMpWpGBXEEec6MMJWIabtgLae49JmVjga0Qyvyry7loijFGYmHUNH7r7B3mM0+BMKgCTiGHUvlmPi6iUfN2qZnSqhALcBk0ZhRZXhRfqiC9wSwGvh+p0JqxJs0uNt+tVAZEDs6wZgK7COtcF1RQBIvncoUlw8rgRqUC0tYMYOtN6+/mkiBBrnN4IcZTmbK2sNCtWfkz04H4ciNGL4xOc8INzGTLvQyrnpPTTcmL0hqhkpfUhpSqk6vsEkqSqCpjIsyvTTHykxwgXVjyp71HI2bANDfoguwGHm5gKqKENQKlKo1qkqIIr8+sKAnvTSMNH8t2JJCrGYYqF8SFRrxCTRoI+Ixhy491zoCwdjtiJo/nsmI60VkjBLlEnWqdJl0i4gLYKoy+vH1IBWlz5SZY48fWsGw1ggxThDLZDXwAWLgVMoTeJveVla/GlVUBtrh4LkXHpEozpV/ec8Fa4ehq6WidLTlvan2HA8SEq8zbyRFdxl9O/urzlh3TYcZKwuxSP3ybGsmO0EinGle9L9/piVcJLs1UtkNi4QmS9hZCZWPdOgrTlEsJXMPZDWU1QX2imEUCCC0S+GpCVn8Vf7O3Y3PZQSlbKgOOGmIGqpF33CzMXCsLDZQah8Kn5bUCFNGAMSNmTR0ubBECBoOmfJaZ5h35t+M4SAkAQAMBAgLyo++qyUkuQpi0lwfQhIgJ5xgijv/KGg2lDL7CAc38WQ8fG7nLIjmvbtlVh5/m3ouvHrDGVcajTclsIbH5KkwPx8xbFFXvMS52/vkJEAAICDIkyAj4/wGKVsJgSLQOhAAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1A1A1A; --ink-soft:#262626; --paper:#FBF4EC; --paper-dim:#F0E7D6;
+    --green:#44771A; --green-deep:#325612; --green-bright:#5C9C29;
+    --line: rgba(26,26,26,0.12); --line-strong: rgba(26,26,26,0.22);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--paper); color:var(--ink); font-family:'Work Sans',sans-serif; line-height:1.55; }
+  h1,h2,h3{ font-family:'Bebas Neue',sans-serif; letter-spacing:0.02em; line-height:1; font-weight:400; }
+  .mono{ font-family:'IBM Plex Mono',monospace; }
+  a{ color:inherit; text-decoration:none; }
+  img{ max-width:100%; display:block; }
+  button{ font-family:inherit; cursor:pointer; }
+
+  header{ background:var(--ink); color:var(--paper); position:sticky; top:0; z-index:40; }
+  .header-in{ max-width:1080px; margin:0 auto; padding:14px 24px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+  .logo-mark{ height:30px; }
+  .header-right{ display:flex; align-items:center; gap:18px; }
+  .lang-switch{ display:flex; gap:4px; background:rgba(251,244,236,0.08); border-radius:20px; padding:3px; }
+  .lang-switch button{ background:none; border:none; color:var(--paper); opacity:0.55; font-size:12px; font-family:'IBM Plex Mono'; padding:6px 11px; border-radius:16px; transition:.15s; }
+  .lang-switch button.active{ background:var(--green); opacity:1; color:#fff; }
+  .customer-chip{ font-size:13px; opacity:0.8; }
+  .customer-chip strong{ color:var(--green-bright); font-weight:600; }
+
+  .menu-wrap{ position:relative; }
+  .menu-btn{ background:none; border:none; color:var(--paper); font-size:20px; padding:4px 6px; line-height:1; }
+
+  /* DROPDOWN MENU */
+  #overlay{ display:none; position:fixed; inset:0; z-index:59; background:transparent; }
+  #overlay.open{ display:block; }
+  #sideMenu{ position:absolute; top:calc(100% + 10px); left:0; width:240px; background:var(--ink); color:var(--paper);
+    border-radius:8px; box-shadow:0 12px 32px rgba(0,0,0,0.35); z-index:60; padding:8px 0;
+    opacity:0; visibility:hidden; transform:translateY(-6px); transition:.15s ease; }
+  #sideMenu.open{ opacity:1; visibility:visible; transform:translateY(0); }
+  #sideMenu::before{ content:''; position:absolute; top:-6px; left:22px; width:12px; height:12px; background:var(--ink); transform:rotate(45deg); }
+  .sm-item{ display:flex; align-items:center; gap:12px; padding:12px 18px; font-size:14px; font-weight:500; opacity:0.82; cursor:pointer; border-left:3px solid transparent; }
+  .sm-item:hover{ opacity:1; background:rgba(251,244,236,0.06); }
+  .sm-item.active{ opacity:1; border-left-color:var(--green-bright); background:rgba(251,244,236,0.06); }
+  .sm-item .ic{ width:18px; text-align:center; }
+
+  /* NUTRITION / PROGRESS / ACCOUNT / HELP PAGES */
+  .info-page{ display:none; padding-bottom:60px; }
+  .nutri-card{ background:#fff; border:1px solid var(--line); border-radius:6px; padding:20px; margin-bottom:14px; }
+  .nutri-card h4{ font-family:'Work Sans'; font-weight:700; font-size:15px; margin-bottom:6px; }
+  .nutri-card p{ font-size:13.5px; opacity:0.75; }
+  .macro-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:20px; }
+  .macro-box{ background:var(--ink); color:#fff; border-radius:6px; padding:18px; text-align:center; }
+  .macro-box .num{ font-family:'Bebas Neue'; font-size:32px; color:var(--green-bright); }
+  .macro-box .lbl{ font-size:11px; opacity:0.7; font-family:'IBM Plex Mono'; text-transform:uppercase; }
+  .stat-cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:24px; }
+  .stat-card{ background:#fff; border:1px solid var(--line); border-radius:6px; padding:20px; }
+  .stat-card .num{ font-family:'Bebas Neue'; font-size:38px; color:var(--green); }
+  .stat-card .lbl{ font-size:12px; opacity:0.65; }
+  .faq-item{ background:#fff; border:1px solid var(--line); border-radius:6px; padding:16px 18px; margin-bottom:10px; cursor:pointer; }
+  .faq-item h4{ font-size:14px; font-weight:600; display:flex; justify-content:space-between; }
+  .faq-item .a{ font-size:13px; opacity:0.7; margin-top:8px; display:none; }
+  .faq-item.open .a{ display:block; }
+  .acc-row{ display:flex; justify-content:space-between; padding:14px 0; border-bottom:1px solid var(--line); font-size:14px; }
+
+  .wrap{ max-width:1080px; margin:0 auto; padding:0 24px; }
+
+  .page-title{ padding:44px 0 8px; }
+  .page-title h1{ font-size:40px; }
+  .page-sub{ opacity:0.65; font-size:14px; margin-bottom:32px; }
+
+  .program-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; padding-bottom:60px; }
+  .prog-card{ background:#fff; border:1px solid var(--line); border-radius:6px; overflow:hidden; cursor:pointer; transition:.15s; }
+  .prog-card:hover{ border-color:var(--green); box-shadow:0 4px 18px rgba(0,0,0,0.06); }
+  .prog-cover{ height:150px; position:relative; overflow:hidden; }
+  .prog-cover img{ width:100%; height:100%; object-fit:cover; }
+  .prog-cover.locked img{ filter:grayscale(1) brightness(0.5); }
+  .prog-cover span.tag{ position:absolute; top:12px; left:12px; background:var(--green); color:#fff; font-family:'IBM Plex Mono'; font-size:10px; text-transform:uppercase; letter-spacing:0.08em; padding:5px 10px; border-radius:3px; z-index:2; }
+  .prog-cover.locked span.tag{ background:#555; }
+  .lock-icon{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:30px; z-index:2; }
+  .prog-body{ padding:18px 20px 20px; }
+  .prog-body h3{ font-size:22px; margin-bottom:4px; }
+  .prog-meta{ font-size:12px; opacity:0.6; margin-bottom:10px; font-family:'IBM Plex Mono'; }
+  .prog-progress{ height:5px; background:var(--paper-dim); border-radius:3px; overflow:hidden; margin-top:12px; }
+  .prog-progress i{ display:block; height:100%; background:var(--green); }
+  .unlock-btn{ margin-top:12px; display:inline-block; background:var(--green); color:#fff; font-size:12px; padding:9px 16px; border-radius:4px; text-transform:uppercase; letter-spacing:0.05em; font-weight:600; }
+
+  #programView{ display:none; padding-bottom:60px; }
+  .back-link{ display:inline-flex; align-items:center; gap:6px; font-size:13px; opacity:0.65; margin:24px 0 6px; }
+  .back-link:hover{ opacity:1; color:var(--green); }
+  .prog-hero{ display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; padding:10px 0 20px; border-bottom:1px solid var(--line); }
+  .prog-hero h1{ font-size:44px; }
+  .prog-hero .for{ font-family:'IBM Plex Mono'; font-size:13px; color:var(--green-deep); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px; }
+  .goal-chips{ display:flex; gap:8px; flex-wrap:wrap; }
+  .goal-chips span{ font-size:11px; font-family:'IBM Plex Mono'; border:1px solid var(--line-strong); padding:6px 12px; border-radius:20px; }
+
+  .overall-progress{ display:flex; align-items:center; gap:14px; margin:18px 0 10px; }
+  .overall-progress .bar{ flex:1; height:8px; background:var(--paper-dim); border-radius:4px; overflow:hidden; }
+  .overall-progress .bar i{ display:block; height:100%; background:var(--green); }
+  .overall-progress .lbl{ font-family:'IBM Plex Mono'; font-size:12px; opacity:0.7; white-space:nowrap; }
+
+  .week-tabs{ display:flex; gap:8px; margin:20px 0 20px; flex-wrap:wrap; }
+  .week-tab{ background:#fff; border:1px solid var(--line); padding:10px 18px; border-radius:20px; font-size:13px; font-weight:600; }
+  .week-tab.active{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
+
+  .workout-list{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .workout-card{ background:#fff; border:1px solid var(--line); border-radius:6px; overflow:hidden; cursor:pointer; transition:.15s; }
+  .workout-card:hover{ border-color:var(--green); }
+  .workout-card .wc-img{ height:90px; position:relative; overflow:hidden; }
+  .workout-card .wc-img img{ width:100%; height:100%; object-fit:cover; }
+  .workout-card.locked{ cursor:not-allowed; }
+  .workout-card.locked .wc-img img{ filter:grayscale(1) brightness(0.45); }
+  .workout-card.locked .wc-body{ opacity:0.55; }
+  .wc-lock{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#fff; font-size:22px; }
+  .wc-done{ position:absolute; top:8px; right:8px; background:var(--green); color:#fff; font-size:10px; font-family:'IBM Plex Mono'; padding:3px 8px; border-radius:10px; }
+  .wc-body{ padding:14px 16px; }
+  .workout-card .idx{ font-family:'Bebas Neue'; font-size:26px; color:var(--green); }
+  .workout-card h4{ font-family:'Work Sans'; font-weight:700; font-size:14px; margin:2px 0 3px; }
+  .workout-card p{ font-size:11px; opacity:0.6; }
+  .locked-hint{ font-size:10.5px; color:#8a6a2f; margin-top:4px; }
+
+  #workoutDetail{ display:none; padding-bottom:60px; }
+  .wd-head{ padding:24px 0 20px; border-bottom:1px solid var(--line); }
+  .wd-head .eyebrow{ font-family:'IBM Plex Mono'; font-size:12px; color:var(--green-deep); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:8px; }
+  .wd-head h1{ font-size:38px; }
+  .wd-intro{ opacity:0.8; font-size:15px; max-width:640px; margin:14px 0; }
+  .wd-tip{ background:var(--green); color:#fff; padding:16px 18px; border-radius:6px; font-size:14px; max-width:640px; }
+
+  .ex-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:28px; }
+  .ex-card{ background:#fff; border:1px solid var(--line); border-radius:6px; overflow:hidden; }
+  .ex-thumb{ position:relative; aspect-ratio:16/10; background:#2b2b2b; cursor:pointer; overflow:hidden; }
+  .ex-thumb img{ width:100%; height:100%; object-fit:cover; opacity:0.85; transition:.2s; }
+  .ex-thumb:hover img{ opacity:0.6; transform:scale(1.03); }
+  .play-btn{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+  .play-btn i{ width:52px; height:52px; border-radius:50%; background:rgba(251,244,236,0.92); display:flex; align-items:center; justify-content:center; font-size:18px; color:var(--ink); }
+  .ex-body{ padding:14px 16px; }
+  .ex-body .num{ font-family:'IBM Plex Mono'; font-size:11px; color:var(--green-deep); }
+  .ex-body h4{ font-family:'Work Sans'; font-weight:700; font-size:15px; margin:2px 0 6px; }
+  .ex-body .sets{ font-family:'IBM Plex Mono'; font-size:12px; opacity:0.7; }
+  .ex-body input{ width:100%; margin-top:8px; border:1px solid var(--line); border-radius:3px; padding:7px 9px; font-size:12px; font-family:inherit; }
+
+  .complete-bar{ margin-top:32px; padding:20px; background:#fff; border:1px solid var(--line); border-radius:6px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+  .complete-bar p{ font-size:13px; opacity:0.7; max-width:420px; }
+  .complete-btn{ background:var(--green); color:#fff; border:none; padding:13px 24px; border-radius:4px; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; }
+  .complete-btn:hover{ background:var(--green-bright); }
+  .complete-btn:disabled{ background:#bbb; cursor:default; }
+  .complete-btn.done{ background:#2c3d1e; }
+
+  #videoModal{ display:none; position:fixed; inset:0; background:rgba(10,10,10,0.88); z-index:100; align-items:center; justify-content:center; padding:20px; }
+  .modal-box{ width:100%; max-width:820px; }
+  .modal-topbar{ display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; color:#fff; }
+  .modal-topbar h4{ font-family:'Work Sans'; font-size:15px; font-weight:600; }
+  .modal-close{ background:none; border:none; color:#fff; font-size:22px; opacity:0.7; }
+  .modal-close:hover{ opacity:1; }
+  .video-frame{ position:relative; width:100%; aspect-ratio:16/9; background:#000; border-radius:6px; overflow:hidden; }
+  .video-frame iframe{ width:100%; height:100%; border:0; }
+
+  @media (max-width:820px){
+    .program-grid, .workout-list, .ex-grid{ grid-template-columns:1fr; }
+    .header-right{ gap:10px; }
+    .customer-chip{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <div style="display:flex; align-items:center; gap:14px;">
+      <div class="menu-wrap">
+        <button class="menu-btn" onclick="toggleMenu(event)" aria-label="Menu">&#9776;</button>
+        <div id="overlay" onclick="closeMenu()"></div>
+        <div id="sideMenu">
+          <div class="sm-item active" data-page="programs" onclick="goPage('programs')"><span class="ic">&#128190;</span><span data-i18n="navPrograms">My Programs</span></div>
+          <div class="sm-item" data-page="nutrition" onclick="goPage('nutrition')"><span class="ic">&#127811;</span><span data-i18n="navNutrition">Nutrition</span></div>
+          <div class="sm-item" data-page="progress" onclick="goPage('progress')"><span class="ic">&#128200;</span><span data-i18n="navProgress">My Progress</span></div>
+          <div class="sm-item" data-page="account" onclick="goPage('account')"><span class="ic">&#128100;</span><span data-i18n="navAccount">Account</span></div>
+          <div class="sm-item" data-page="help" onclick="goPage('help')"><span class="ic">&#10067;</span><span data-i18n="navHelp">Help &amp; FAQ</span></div>
+        </div>
+      </div>
+      <img class="logo-mark" src="data:image/png;base64,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" alt="FitBalance">
+    </div>
+    <div class="header-right">
+      <span class="customer-chip">Signed in as <strong>Alina</strong></span>
+      <div class="lang-switch">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="uk">UK</button>
+        <button data-lang="es">ES</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap" id="myProgramsView">
+  <div class="page-title">
+    <h1 data-i18n="myPrograms">My Programs</h1>
+    <div class="page-sub" data-i18n="myProgramsSub">Programs tied to your account. Click to open.</div>
+  </div>
+  <div class="program-grid">
+    <div class="prog-card" onclick="openProgram()">
+      <div class="prog-cover"><span class="tag" data-i18n="active">Active</span><img src="https://picsum.photos/seed/fbcover1/500/300" alt=""></div>
+      <div class="prog-body">
+        <h3 data-i18n="progTitle">Transformation Program</h3>
+        <div class="prog-meta" data-i18n="progMeta">4 WEEKS · 12 WORKOUTS</div>
+        <div class="prog-progress"><i id="progBarMain" style="width:16%"></i></div>
+      </div>
+    </div>
+    <div class="prog-card locked-card">
+      <div class="prog-cover locked"><span class="tag" data-i18n="locked">Locked</span><img src="https://picsum.photos/seed/fbcover2/500/300" alt=""><div class="lock-icon" style="color:#fff;">🔒</div></div>
+      <div class="prog-body">
+        <h3 data-i18n="progTitle2">Mobility &amp; Recovery</h3>
+        <div class="prog-meta" data-i18n="progMeta2">3 WEEKS · 9 SESSIONS</div>
+        <a class="unlock-btn" data-i18n="unlock" href="#">Unlock this program</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" id="programView">
+  <a class="back-link" onclick="backToPrograms()" href="#">&larr; <span data-i18n="backPrograms">My Programs</span></a>
+  <div class="prog-hero">
+    <div>
+      <div class="for" data-i18n="preparedFor">Prepared for Alina</div>
+      <h1 data-i18n="progTitle">Transformation Program</h1>
+    </div>
+    <div class="goal-chips">
+      <span data-i18n="goal1">Posture</span>
+      <span data-i18n="goal2">Back definition</span>
+      <span data-i18n="goal3">Strong core</span>
+      <span data-i18n="goal4">Glutes</span>
+    </div>
+  </div>
+
+  <div class="overall-progress">
+    <div class="bar"><i id="overallBar" style="width:16%"></i></div>
+    <div class="lbl" id="overallLbl">2 / 12 <span data-i18n="sessionsDone">sessions complete</span></div>
+  </div>
+
+  <div class="week-tabs">
+    <button class="week-tab active" data-week="1"><span data-i18n="week">Week</span> 1</button>
+    <button class="week-tab" data-week="2"><span data-i18n="week">Week</span> 2</button>
+    <button class="week-tab" data-week="3"><span data-i18n="week">Week</span> 3</button>
+    <button class="week-tab" data-week="4"><span data-i18n="week">Week</span> 4</button>
+  </div>
+
+  <div class="workout-list" id="workoutList"></div>
+</div>
+
+<div class="wrap" id="workoutDetail">
+  <a class="back-link" onclick="backToProgram()" href="#">&larr; <span data-i18n="backProgram">Transformation Program</span></a>
+  <div class="wd-head">
+    <div class="eyebrow" id="wdWeekLabel">Week 1</div>
+    <h1 id="wdTitle">Workout 1 — Back</h1>
+    <p class="wd-intro" id="wdIntro"></p>
+    <div class="wd-tip"><span data-i18n="tipLabel">Coach tip:</span> <span id="wdTip"></span></div>
+  </div>
+  <div class="ex-grid" id="exGrid"></div>
+
+  <div class="complete-bar">
+    <p data-i18n="completeHint">Mark this session complete to unlock the next one. Sessions unlock in order — no skipping ahead.</p>
+    <button class="complete-btn" id="completeBtn" onclick="markComplete()" data-i18n="markComplete">Mark Session Complete</button>
+  </div>
+</div>
+
+<!-- NUTRITION -->
+<div class="wrap info-page" id="page-nutrition">
+  <div class="page-title">
+    <h1 data-i18n="navNutrition">Nutrition</h1>
+    <div class="page-sub" data-i18n="nutriSub">Guidance to go with your training program.</div>
+  </div>
+  <div class="macro-row">
+    <div class="macro-box"><div class="num">1850</div><div class="lbl" data-i18n="dailyCalories">Daily calories</div></div>
+    <div class="macro-box"><div class="num">140g</div><div class="lbl" data-i18n="protein">Protein</div></div>
+    <div class="macro-box"><div class="num">2.2L</div><div class="lbl" data-i18n="water">Water / day</div></div>
+  </div>
+  <div class="nutri-card"><h4 data-i18n="nutriTitle1">Milk thistle</h4><p data-i18n="nutriBody1">Supports liver function and detoxification.</p></div>
+  <div class="nutri-card"><h4 data-i18n="nutriTitle2">Electrolyte water</h4><p data-i18n="nutriBody2">Restores water-salt balance after training.</p></div>
+  <div class="nutri-card"><h4 data-i18n="nutriTitle3">Ashwagandha</h4><p data-i18n="nutriBody3">Lowers cortisol and helps manage stress.</p></div>
+  <div class="nutri-card"><h4 data-i18n="nutriTitle4">Rhodiola rosea</h4><p data-i18n="nutriBody4">Boosts endurance and supports energy recovery.</p></div>
+</div>
+
+<!-- PROGRESS -->
+<div class="wrap info-page" id="page-progress">
+  <div class="page-title">
+    <h1 data-i18n="navProgress">My Progress</h1>
+    <div class="page-sub" data-i18n="progressSub">Your training history at a glance.</div>
+  </div>
+  <div class="stat-cards">
+    <div class="stat-card"><div class="num">2</div><div class="lbl" data-i18n="sessionsDone">sessions complete</div></div>
+    <div class="stat-card"><div class="num">14</div><div class="lbl" data-i18n="daysActive">days active</div></div>
+    <div class="stat-card"><div class="num">4.6h</div><div class="lbl" data-i18n="totalTime">total training time</div></div>
+  </div>
+  <div class="nutri-card"><h4 data-i18n="progressNote">Keep going</h4><p data-i18n="progressNoteBody">Don't aim for perfect. Aim for consistent — that's what changes the body.</p></div>
+</div>
+
+<!-- ACCOUNT -->
+<div class="wrap info-page" id="page-account">
+  <div class="page-title">
+    <h1 data-i18n="navAccount">Account</h1>
+    <div class="page-sub" data-i18n="accountSub">Your details and subscription.</div>
+  </div>
+  <div class="nutri-card">
+    <div class="acc-row"><span data-i18n="accName">Name</span><span>Alina</span></div>
+    <div class="acc-row"><span data-i18n="accEmail">Email</span><span>alina@example.com</span></div>
+    <div class="acc-row"><span data-i18n="accPlan">Active plan</span><span>Transformation Program — 4 weeks</span></div>
+    <div class="acc-row" style="border-bottom:none;"><span data-i18n="accLang">Language</span><span>EN / UK / ES</span></div>
+  </div>
+</div>
+
+<!-- HELP -->
+<div class="wrap info-page" id="page-help">
+  <div class="page-title">
+    <h1 data-i18n="navHelp">Help &amp; FAQ</h1>
+    <div class="page-sub" data-i18n="helpSub">Common questions from clients.</div>
+  </div>
+  <div class="faq-item" onclick="this.classList.toggle('open')">
+    <h4><span data-i18n="faqQ1">Can I skip ahead to a later session?</span><span>+</span></h4>
+    <div class="a" data-i18n="faqA1">No — sessions unlock in order once you mark the previous one complete. This keeps the program's progression safe and effective.</div>
+  </div>
+  <div class="faq-item" onclick="this.classList.toggle('open')">
+    <h4><span data-i18n="faqQ2">What if I miss a few days?</span><span>+</span></h4>
+    <div class="a" data-i18n="faqA2">No problem — your progress is saved. Pick up right where you left off whenever you're ready.</div>
+  </div>
+  <div class="faq-item" onclick="this.classList.toggle('open')">
+    <h4><span data-i18n="faqQ3">How do I contact my coach?</span><span>+</span></h4>
+    <div class="a" data-i18n="faqA3">Use the message button in your account, or email directly — replies within 24 hours.</div>
+  </div>
+</div>
+
+<div id="videoModal">
+  <div class="modal-box">
+    <div class="modal-topbar">
+      <h4 id="modalTitle">Exercise</h4>
+      <button class="modal-close" onclick="closeVideo()">&times;</button>
+    </div>
+    <div class="video-frame" id="videoFrame"></div>
+  </div>
+</div>
+
+
+<script>
+const i18n = {
+  en: { myPrograms:"My Programs", myProgramsSub:"Programs tied to your account. Click to open.",
+    active:"Active", locked:"Locked", progTitle:"Transformation Program", progMeta:"4 WEEKS · 12 WORKOUTS",
+    progTitle2:"Mobility & Recovery", progMeta2:"3 WEEKS · 9 SESSIONS", unlock:"Unlock this program",
+    backPrograms:"My Programs", backProgram:"Transformation Program", preparedFor:"Prepared for Alina",
+    goal1:"Posture", goal2:"Back definition", goal3:"Strong core", goal4:"Glutes",
+    week:"Week", tipLabel:"Coach tip:", notes:"Notes", sessionsDone:"sessions complete",
+    completeHint:"Mark this session complete to unlock the next one. Sessions unlock in order — no skipping ahead.",
+    markComplete:"Mark Session Complete", alreadyDone:"Completed", lockedCard:"Locked",
+    unlockHint:"Complete the previous session to unlock",
+    navPrograms:"My Programs", navNutrition:"Nutrition", navProgress:"My Progress", navAccount:"Account", navHelp:"Help & FAQ",
+    nutriSub:"Guidance to go with your training program.", dailyCalories:"Daily calories", protein:"Protein", water:"Water / day",
+    nutriTitle1:"Milk thistle", nutriBody1:"Supports liver function and detoxification.",
+    nutriTitle2:"Electrolyte water", nutriBody2:"Restores water-salt balance after training.",
+    nutriTitle3:"Ashwagandha", nutriBody3:"Lowers cortisol and helps manage stress.",
+    nutriTitle4:"Rhodiola rosea", nutriBody4:"Boosts endurance and supports energy recovery.",
+    progressSub:"Your training history at a glance.", daysActive:"days active", totalTime:"total training time",
+    progressNote:"Keep going", progressNoteBody:"Don't aim for perfect. Aim for consistent — that's what changes the body.",
+    accountSub:"Your details and subscription.", accName:"Name", accEmail:"Email", accPlan:"Active plan", accLang:"Language",
+    helpSub:"Common questions from clients.",
+    faqQ1:"Can I skip ahead to a later session?", faqA1:"No — sessions unlock in order once you mark the previous one complete. This keeps the program's progression safe and effective.",
+    faqQ2:"What if I miss a few days?", faqA2:"No problem — your progress is saved. Pick up right where you left off whenever you're ready.",
+    faqQ3:"How do I contact my coach?", faqA3:"Use the message button in your account, or email directly — replies within 24 hours." },
+  uk: { myPrograms:"Мої програми", myProgramsSub:"Програми, прив’язані до вашого акаунту. Натисніть, щоб відкрити.",
+    active:"Активна", locked:"Заблоковано", progTitle:"Програма трансформації", progMeta:"4 ТИЖНІ · 12 ТРЕНУВАНЬ",
+    progTitle2:"Мобільність і відновлення", progMeta2:"3 ТИЖНІ · 9 СЕСІЙ", unlock:"Розблокувати програму",
+    backPrograms:"Мої програми", backProgram:"Програма трансформації", preparedFor:"Підготовлено для Аліни",
+    goal1:"Постава", goal2:"Рельєф спини", goal3:"Сильний кор", goal4:"Сідниці",
+    week:"Тиждень", tipLabel:"Порада тренера:", notes:"Нотатки", sessionsDone:"тренувань виконано",
+    completeHint:"Позначте тренування виконаним, щоб розблокувати наступне. Тренування відкриваються по порядку.",
+    markComplete:"Позначити виконаним", alreadyDone:"Виконано", lockedCard:"Заблоковано",
+    unlockHint:"Завершіть попереднє тренування, щоб розблокувати",
+    navPrograms:"Мої програми", navNutrition:"Харчування", navProgress:"Мій прогрес", navAccount:"Акаунт", navHelp:"Допомога",
+    nutriSub:"Рекомендації для твоєї програми тренувань.", dailyCalories:"Калорій на день", protein:"Білка", water:"Води / день",
+    nutriTitle1:"Розторопша", nutriBody1:"Підтримка печінки та детоксикація організму.",
+    nutriTitle2:"Вода з електролітами", nutriBody2:"Відновлення водно-сольового балансу після тренування.",
+    nutriTitle3:"Ашваганда", nutriBody3:"Зниження кортизолу та управління стресом.",
+    nutriTitle4:"Родіола рожева", nutriBody4:"Підвищення витривалості та відновлення енергії.",
+    progressSub:"Твоя історія тренувань одним поглядом.", daysActive:"днів активності", totalTime:"загальний час тренувань",
+    progressNote:"Продовжуй", progressNoteBody:"Не прагни до ідеалу. Прагни до регулярності — саме вона змінює тіло.",
+    accountSub:"Твої дані та підписка.", accName:"Ім'я", accEmail:"Email", accPlan:"Активний план", accLang:"Мова",
+    helpSub:"Часті запитання клієнтів.",
+    faqQ1:"Чи можна пропустити тренування і перейти до наступного?", faqA1:"Ні — тренування відкриваються по порядку після позначення попереднього виконаним. Це зберігає безпечність і ефективність прогресу.",
+    faqQ2:"Що робити, якщо я пропущу кілька днів?", faqA2:"Нічого страшного — твій прогрес збережено. Продовжуй з того місця, де зупинилась.",
+    faqQ3:"Як зв'язатися з тренером?", faqA3:"Скористайся кнопкою повідомлень в акаунті або напиши на email — відповідь протягом 24 годин." },
+  es: { myPrograms:"Mis programas", myProgramsSub:"Programas vinculados a tu cuenta. Haz clic para abrir.",
+    active:"Activo", locked:"Bloqueado", progTitle:"Programa de transformación", progMeta:"4 SEMANAS · 12 ENTRENOS",
+    progTitle2:"Movilidad y recuperación", progMeta2:"3 SEMANAS · 9 SESIONES", unlock:"Desbloquear programa",
+    backPrograms:"Mis programas", backProgram:"Programa de transformación", preparedFor:"Preparado para Alina",
+    goal1:"Postura", goal2:"Definición de espalda", goal3:"Core fuerte", goal4:"Glúteos",
+    week:"Semana", tipLabel:"Consejo de la coach:", notes:"Notas", sessionsDone:"sesiones completadas",
+    completeHint:"Marca esta sesión como completada para desbloquear la siguiente. Las sesiones se desbloquean en orden.",
+    markComplete:"Marcar sesión completada", alreadyDone:"Completada", lockedCard:"Bloqueado",
+    unlockHint:"Completa la sesión anterior para desbloquear",
+    navPrograms:"Mis programas", navNutrition:"Nutrición", navProgress:"Mi progreso", navAccount:"Cuenta", navHelp:"Ayuda y FAQ",
+    nutriSub:"Guía complementaria a tu programa de entrenamiento.", dailyCalories:"Calorías diarias", protein:"Proteína", water:"Agua / día",
+    nutriTitle1:"Cardo mariano", nutriBody1:"Apoya la función hepática y la desintoxicación.",
+    nutriTitle2:"Agua con electrolitos", nutriBody2:"Restaura el equilibrio hidrosalino después de entrenar.",
+    nutriTitle3:"Ashwagandha", nutriBody3:"Reduce el cortisol y ayuda a manejar el estrés.",
+    nutriTitle4:"Rhodiola rosea", nutriBody4:"Mejora la resistencia y favorece la recuperación de energía.",
+    progressSub:"Tu historial de entrenamiento de un vistazo.", daysActive:"días activa", totalTime:"tiempo total de entrenamiento",
+    progressNote:"Sigue así", progressNoteBody:"No busques la perfección. Busca la constancia — es lo que cambia el cuerpo.",
+    accountSub:"Tus datos y suscripción.", accName:"Nombre", accEmail:"Email", accPlan:"Plan activo", accLang:"Idioma",
+    helpSub:"Preguntas frecuentes de clientes.",
+    faqQ1:"¿Puedo saltar a una sesión posterior?", faqA1:"No — las sesiones se desbloquean en orden al marcar la anterior como completada. Esto mantiene el progreso seguro y efectivo.",
+    faqQ2:"¿Y si falto algunos días?", faqA2:"No pasa nada — tu progreso queda guardado. Retoma justo donde lo dejaste cuando estés lista.",
+    faqQ3:"¿Cómo contacto a mi coach?", faqA3:"Usa el botón de mensajes en tu cuenta, o escribe por email — respuesta en 24 horas." }
+};
+let currentLang = 'en';
+
+function applyLang(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    if(i18n[currentLang][key]) el.textContent = i18n[currentLang][key];
+  });
+}
+document.querySelectorAll('.lang-switch button').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.lang-switch button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    currentLang = btn.dataset.lang;
+    applyLang();
+    renderWeek(activeWeek);
+    if(document.getElementById('workoutDetail').style.display==='block') renderWorkout(activeWeek, activeWorkoutIdx);
+  });
+});
+
+const SAMPLE_VIDEO = "https://www.youtube.com/embed/dQw4w9WgXcQ"; // placeholder — replace with real private/unlisted video URL per exercise
+function imgFor(seed, w=400, h=250){ return `https://picsum.photos/seed/${encodeURIComponent(seed)}/${w}/${h}`; }
+
+const weeks = {
+  1: [
+    { title:"Workout 1 — Back", focus:"Back", intro:"Today we work the back muscles, improve posture and open the chest. Move slowly, focus on technique over speed.", tip:"Exhale on effort, inhale on release.",
+      exercises:[
+        {name:"Bent-over dumbbell row", sets:"3 × 12–15"},{name:"Bent-over lateral raise", sets:"3 × 12–15"},
+        {name:"Band row to waist", sets:"3 × 15"},{name:"Reverse fly (cable)", sets:"3 × 12"},
+        {name:"Superman", sets:"3 × 12"},{name:"Lat pulldown", sets:"3 × 10"},
+        {name:"Prone boat pose", sets:"3 × 12"},{name:"Face pull with band", sets:"3 × 15"}
+      ]},
+    { title:"Workout 2 — Glutes", focus:"Glutes", intro:"Focus is on the glutes today. Feel the target muscle in every rep — slow and controlled, not fast.", tip:"Activate the glutes before training — 2 min of light bodyweight bridges.",
+      exercises:[
+        {name:"Glute bridge with dumbbell", sets:"3 × 15"},{name:"Romanian deadlift", sets:"3 × 12"},
+        {name:"Band leg abduction", sets:"3 × 15 each"},{name:"Sumo squat", sets:"3 × 12–15"},
+        {name:"Reverse lunge", sets:"3 × 10 each"},{name:"Fire hydrant", sets:"3 × 15 each"},
+        {name:"Standing kickback", sets:"3 × 15 each"},{name:"Single-leg glute bridge", sets:"3 × 10 each"}
+      ]},
+    { title:"Workout 3 — Core + Stretch", focus:"Core", intro:"Today we work the deep core muscles and pelvic stability. These muscles are the foundation of good posture and spine protection.", tip:"Keep the spine in a neutral position through every core movement.",
+      exercises:[
+        {name:"Forearm plank", sets:"30–40 sec × 3"},{name:"Dead bug", sets:"3 × 10 each side"},
+        {name:"Lying leg raise", sets:"3 × 12"},{name:"Bicycle crunch", sets:"3 × 20 (10 each)"},
+        {name:"Side plank", sets:"30 sec × 3 each"},{name:"Bird-dog", sets:"3 × 10 each"},
+        {name:"Weighted crunch, held", sets:"3 × 12"},{name:"Standing vacuum", sets:"5–8 × 30 sec"}
+      ]}
+  ],
+  2: [
+    { title:"Workout 4 — Back", focus:"Back", intro:"Week 2 — time to raise the intensity. Back focus again, with new variations and a bit more load.", tip:"If week 1 felt easy, add a little weight.",
+      exercises:[
+        {name:"One-arm dumbbell row", sets:"3 × 12 each"},{name:"Wide-grip band row", sets:"3 × 15"},
+        {name:"Dumbbell pullover", sets:"3 × 12"},{name:"Wide-grip lat pulldown", sets:"3 × 12"},
+        {name:"Reinforced face pull", sets:"3 × 20"},{name:"Boat with hold", sets:"3 × 10 (3 sec)"},
+        {name:"Reverse fly with band", sets:"3 × 12"},{name:"Low row", sets:"3 × 12"}
+      ]},
+    { title:"Workout 5 — Glutes", focus:"Glutes", intro:"Week 2 glute session — feeling the difference already? Adding harder variations, tighter movement control.", tip:"Peak-contract at the top — squeeze the glutes for 1–2 seconds.",
+      exercises:[
+        {name:"Glute bridge on plate", sets:"3 × 15"},{name:"Bulgarian split squat", sets:"3 × 10 each"},
+        {name:"Single-leg deadlift", sets:"3 × 10 each"},{name:"Cable leg abduction", sets:"3 × 15 each"},
+        {name:"Kickback on all fours (band)", sets:"3 × 15 each"},{name:"Band squat", sets:"3 × 15"},
+        {name:"Seated leg extension", sets:"3 × 20"},{name:"Lateral band walk", sets:"3 × 20 (10 each)"}
+      ]},
+    { title:"Workout 6 — Core + Stretch", focus:"Core", intro:"Closing week 2 with core work. Adding harder plank variations and unstable movement. Feel the core getting stronger.", tip:"Control the lower back — it shouldn't sag or arch.",
+      exercises:[
+        {name:"Plank with leg lift", sets:"3 × 10 each"},{name:"Dead bug (advanced)", sets:"3 × 12 each"},
+        {name:"Side plank, hip dip", sets:"3 × 12 each"},{name:"Weighted crunch", sets:"3 × 12"},
+        {name:"Leg extension on bench", sets:"3 × 15"},{name:"Bird-dog (slow)", sets:"3 × 10 each (3 sec)"},
+        {name:"Mountain climber (slow)", sets:"3 × 20"},{name:"Standing vacuum", sets:"5 × 30 sec"}
+      ]}
+  ],
+  3: [
+    { title:"Workout 7 — Back", focus:"Back", intro:"Week 3 — you're already feeling results. Progressing further: more load or more reps. Back definition sharpens with every session.", tip:"Watch for symmetry — work both sides equally.",
+      exercises:[
+        {name:"One-arm dumbbell row", sets:"3 × 12 each"},{name:"Cable row to waist", sets:"3 × 15"},
+        {name:"Dumbbell boat", sets:"3 × 12"},{name:"Band row to face", sets:"3 × 15"},
+        {name:"Lying lateral raise", sets:"3 × 12"},{name:"T-bar row", sets:"3 × 10"},
+        {name:"Superman with hold", sets:"3 × 10 (3 sec)"},{name:"Reverse plank", sets:"30–40 sec × 3"}
+      ]},
+    { title:"Workout 8 — Glutes", focus:"Glutes", intro:"Week 3 glute session — feeling stronger? Adding more complex variations and tighter movement control.", tip:"Focus on quality of the squeeze, not the weight.",
+      exercises:[
+        {name:"Glute bridge with pause", sets:"3 × 12 (2 sec hold)"},{name:"Bulgarian split squat, dumbbells", sets:"3 × 10 each"},
+        {name:"Cable row to chest (machine)", sets:"3 × 12"},{name:"Side lunge", sets:"3 × 10 each"},
+        {name:"Standing kickback with dumbbell", sets:"3 × 15 each"},{name:"Sumo squat, paused at bottom", sets:"3 × 12 (2 sec)"},
+        {name:"Fire hydrant with band", sets:"3 × 15 each"},{name:"Single-leg glute bridge, weighted", sets:"3 × 10 each"}
+      ]},
+    { title:"Workout 9 — Core + Stretch", focus:"Core", intro:"Week 3 final workout — introducing more advanced core exercises. You've clearly progressed, and today it shows in movement quality.", tip:"Don't hold your breath — breathe rhythmically.",
+      exercises:[
+        {name:"Hollow body hold", sets:"3 × 20–30 sec"},{name:"Plank with arm reach", sets:"3 × 10 each"},
+        {name:"Side plank star", sets:"3 × 20 sec each"},{name:"Russian twist, dumbbell", sets:"3 × 20"},
+        {name:"Slow leg lower", sets:"3 × 10 (3 sec down)"},{name:"Scissors", sets:"3 × 30 sec"},
+        {name:"Bird-dog with dumbbell", sets:"3 × 8 each"},{name:"Bent-over vacuum", sets:"5 × 30 sec"}
+      ]}
+  ],
+  4: [
+    { title:"Workout 10 — Back", focus:"Back", intro:"Final week! You've come a long way — 4 weeks of systematic work. Giving 100% today: the final back session of this program.", tip:"Week 4 — the final chord. Make every rep count.",
+      exercises:[
+        {name:"Barbell bent-over row", sets:"3 × 10"},{name:"One-arm dumbbell row (drop set)", sets:"2 × 12 + 8"},
+        {name:"Lying pullover", sets:"3 × 12"},{name:"Wide-grip lat pulldown", sets:"3 × 12"},
+        {name:"Face pull (reinforced)", sets:"3 × 20"},{name:"Boat with dumbbells, held", sets:"3 × 10 (3 sec)"},
+        {name:"Upright row", sets:"3 × 12"},{name:"Reverse fly (final set)", sets:"3 × 15"}
+      ]},
+    { title:"Workout 11 — Glutes", focus:"Glutes", intro:"Final glute workout! Four weeks of work — and today you can feel the difference. Finishing the program strong.", tip:"You can add a bit more weight today — check your 4-week progress!",
+      exercises:[
+        {name:"Glute bridge (max weight)", sets:"4 × 12"},{name:"Bulgarian split squat (final)", sets:"3 × 12 each"},
+        {name:"Deadlift with dumbbells", sets:"3 × 12"},{name:"Side lunge with squat", sets:"3 × 10 each"},
+        {name:"Cable abduction (drop set)", sets:"2 × 15 + 10 each"},{name:"Machine kickback", sets:"3 × 15 each"},
+        {name:"Lateral band walk (reinforced)", sets:"3 × 30 (15 each)"},{name:"Single-leg glute bridge (final)", sets:"3 × 12 each"}
+      ]},
+    { title:"Workout 12 — Core + Stretch", focus:"Core", intro:"Final workout of the program! 12 sessions, 4 weeks, 3 days a week — you did it. Give it everything and enjoy every rep.", tip:"This is your final workout. Make it count.",
+      exercises:[
+        {name:"Hollow body rock", sets:"3 × 30 sec"},{name:"Plank with arm and leg lift", sets:"3 × 8 each"},
+        {name:"Side plank, hip tap", sets:"3 × 12 each"},{name:"V-up", sets:"3 × 10"},
+        {name:"Dead bug with dumbbell", sets:"3 × 10 each"},{name:"Mountain climber (fast)", sets:"3 × 30 sec"},
+        {name:"Russian twist (final)", sets:"3 × 20"},{name:"Vacuum (final)", sets:"5 × 30 sec"}
+      ]}
+  ]
+};
+
+const TOTAL_SESSIONS = 12;
+let completedUpTo = 2; // demo state: sessions 1-2 done, 3 is next unlocked
+let activeWeek = 1, activeWorkoutIdx = 0;
+
+function sessionNum(w, idx){ return (w-1)*3 + idx + 1; }
+
+function updateProgressBars(){
+  const pct = Math.round((completedUpTo/TOTAL_SESSIONS)*100);
+  document.getElementById('progBarMain').style.width = pct+'%';
+  document.getElementById('overallBar').style.width = pct+'%';
+  document.getElementById('overallLbl').innerHTML = `${completedUpTo} / ${TOTAL_SESSIONS} <span data-i18n="sessionsDone">${i18n[currentLang].sessionsDone}</span>`;
+}
+
+// ---- MENU + PAGE NAV ----
+function toggleMenu(e){
+  e.stopPropagation();
+  document.getElementById('sideMenu').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('open');
+}
+function closeMenu(){
+  document.getElementById('sideMenu').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
+}
+const ALL_PAGES = ['myProgramsView','programView','workoutDetail','page-nutrition','page-progress','page-account','page-help'];
+function goPage(page){
+  closeMenu();
+  document.querySelectorAll('.sm-item').forEach(i=>i.classList.toggle('active', i.dataset.page===page));
+  ALL_PAGES.forEach(id=> document.getElementById(id).style.display='none');
+  if(page==='programs'){ document.getElementById('myProgramsView').style.display='block'; }
+  else{ document.getElementById('page-'+page).style.display='block'; }
+}
+
+function openProgram(){
+  document.getElementById('myProgramsView').style.display='none';
+  document.getElementById('workoutDetail').style.display='none';
+  document.getElementById('programView').style.display='block';
+  updateProgressBars();
+  renderWeek(1);
+}
+function backToPrograms(){
+  document.getElementById('programView').style.display='none';
+  document.getElementById('myProgramsView').style.display='block';
+}
+function backToProgram(){
+  document.getElementById('workoutDetail').style.display='none';
+  document.getElementById('programView').style.display='block';
+  updateProgressBars();
+  renderWeek(activeWeek);
+}
+document.querySelectorAll('.week-tab').forEach(tab=>{
+  tab.addEventListener('click', ()=>{
+    document.querySelectorAll('.week-tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    renderWeek(parseInt(tab.dataset.week));
+  });
+});
+
+function renderWeek(w){
+  activeWeek = w;
+  const list = document.getElementById('workoutList');
+  list.innerHTML = '';
+  weeks[w].forEach((wk, idx)=>{
+    const sNum = sessionNum(w, idx);
+    const isDone = sNum <= completedUpTo;
+    const isUnlocked = sNum <= completedUpTo + 1;
+    const card = document.createElement('div');
+    card.className = 'workout-card' + (isUnlocked ? '' : ' locked');
+    const img = imgFor('workout'+sNum, 400, 200);
+    card.innerHTML = `
+      <div class="wc-img">
+        <img src="${img}" alt="">
+        ${isDone ? `<div class="wc-done">${i18n[currentLang].alreadyDone}</div>` : ''}
+        ${!isUnlocked ? `<div class="wc-lock">🔒</div>` : ''}
+      </div>
+      <div class="wc-body">
+        <div class="idx">${String(sNum).padStart(2,'0')}</div>
+        <h4>${wk.title}</h4>
+        <p>${wk.exercises.length} exercises</p>
+        ${!isUnlocked ? `<div class="locked-hint">${i18n[currentLang].unlockHint}</div>` : ''}
+      </div>`;
+    if(isUnlocked) card.onclick = ()=> renderWorkout(w, idx);
+    list.appendChild(card);
+  });
+}
+
+function renderWorkout(w, idx){
+  activeWeek = w; activeWorkoutIdx = idx;
+  const wk = weeks[w][idx];
+  const sNum = sessionNum(w, idx);
+  document.getElementById('programView').style.display='none';
+  document.getElementById('workoutDetail').style.display='block';
+  document.getElementById('wdWeekLabel').textContent = `${i18n[currentLang].week} ${w}`;
+  document.getElementById('wdTitle').textContent = wk.title;
+  document.getElementById('wdIntro').textContent = wk.intro;
+  document.getElementById('wdTip').textContent = wk.tip;
+  const grid = document.getElementById('exGrid');
+  grid.innerHTML = '';
+  wk.exercises.forEach((ex,i)=>{
+    const card = document.createElement('div');
+    card.className = 'ex-card';
+    const img = imgFor('ex'+sNum+'-'+i, 400, 250);
+    card.innerHTML = `
+      <div class="ex-thumb" onclick="openVideo('${ex.name.replace(/'/g,"\\'")}')">
+        <img src="${img}" alt="${ex.name}">
+        <div class="play-btn"><i>&#9658;</i></div>
+      </div>
+      <div class="ex-body">
+        <div class="num">${String(i+1).padStart(2,'0')}</div>
+        <h4>${ex.name}</h4>
+        <div class="sets">${ex.sets}</div>
+        <input type="text" placeholder="${i18n[currentLang].notes}...">
+      </div>`;
+    grid.appendChild(card);
+  });
+
+  const btn = document.getElementById('completeBtn');
+  const isDone = sNum <= completedUpTo;
+  btn.disabled = isDone;
+  btn.classList.toggle('done', isDone);
+  btn.textContent = isDone ? i18n[currentLang].alreadyDone : i18n[currentLang].markComplete;
+  btn.dataset.session = sNum;
+}
+
+function markComplete(){
+  const btn = document.getElementById('completeBtn');
+  const sNum = parseInt(btn.dataset.session);
+  if(sNum === completedUpTo + 1){
+    completedUpTo = sNum;
+    btn.disabled = true;
+    btn.classList.add('done');
+    btn.textContent = i18n[currentLang].alreadyDone;
+  }
+}
+
+function openVideo(name){
+  document.getElementById('modalTitle').textContent = name;
+  document.getElementById('videoFrame').innerHTML = `<iframe src="${SAMPLE_VIDEO}" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+  document.getElementById('videoModal').style.display='flex';
+}
+function closeVideo(){
+  document.getElementById('videoModal').style.display='none';
+  document.getElementById('videoFrame').innerHTML='';
+}
+document.getElementById('videoModal').addEventListener('click', e=>{
+  if(e.target.id==='videoModal') closeVideo();
+});
+
+updateProgressBars();
+</script>
+
+</body>
+</html>
