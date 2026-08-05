@@ -155,6 +155,83 @@
   .contact-box h4{ margin-bottom:10px; font-size:15px; }
   .contact-box p{ font-size:13px; opacity:0.75; }
 
+  /* PROGRAM */
+  #programLocked{ text-align:center; padding:60px 20px; max-width:520px; margin:0 auto; }
+  #programLocked .section-sub{ justify-content:center; }
+  .program-langnote{ font-size:12.5px; opacity:0.6; font-style:italic; margin-bottom:36px; padding:14px 18px; background:#efece3; border-radius:8px; }
+  .program-hero h2{ font-size:36px; margin-bottom:8px; }
+  .program-hero .tag{ font-size:13px; opacity:0.65; margin-bottom:10px; }
+  .program-hero .tagline{ font-size:14px; color:var(--green); font-family:'Cormorant Garamond'; font-style:italic; font-size:19px; margin-bottom:36px; }
+  .program-goals{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-bottom:44px; }
+  .program-goal{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px; }
+  .program-goal h4{ font-size:13px; margin-bottom:8px; letter-spacing:0.06em; }
+  .program-goal p{ font-size:12.5px; opacity:0.7; line-height:1.6; }
+  .program-days{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:44px; }
+  .program-day{ background:#eef3e6; border-radius:10px; padding:18px 20px; }
+  .program-day .d{ font-size:12px; font-weight:700; color:var(--green); letter-spacing:0.06em; margin-bottom:4px; }
+  .program-day p{ font-size:12.5px; opacity:0.75; }
+  .program-warmup{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:24px 28px; margin-bottom:44px; }
+  .program-warmup h4{ font-size:15px; margin-bottom:6px; }
+  .program-warmup .intro{ font-size:12.5px; opacity:0.7; margin-bottom:16px; }
+  .warmup-items{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .warmup-items .wi b{ display:block; font-size:11px; letter-spacing:0.08em; color:var(--green); margin-bottom:4px; }
+  .warmup-items .wi span{ font-size:12.5px; opacity:0.8; }
+
+  .week-tabs{ display:flex; gap:8px; margin-bottom:28px; flex-wrap:wrap; }
+  .week-tab{ background:#fff; border:1px solid var(--line); padding:10px 20px; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; opacity:0.65; }
+  .week-tab.active{ opacity:1; border-color:var(--green); color:var(--green); background:#eef3e6; }
+  .week-panel{ display:none; }
+  .week-panel.active{ display:block; }
+
+  .workout-card{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:28px 30px; margin-bottom:22px; }
+  .workout-card h3{ font-size:22px; margin-bottom:4px; }
+  .workout-card .wk-label{ font-size:11px; text-transform:uppercase; letter-spacing:0.1em; opacity:0.55; margin-bottom:10px; }
+  .workout-card .intro{ font-size:13px; opacity:0.75; line-height:1.7; margin-bottom:12px; }
+  .workout-tip{ background:#eef3e6; border-left:3px solid var(--green); padding:10px 14px; font-size:12.5px; border-radius:0 6px 6px 0; margin-bottom:20px; }
+  .exercise-list{ display:flex; flex-direction:column; gap:8px; margin-bottom:14px; }
+  .exercise-row{ display:flex; gap:12px; align-items:baseline; padding:10px 14px; background:var(--paper); border-radius:8px; font-size:12.5px; }
+  .exercise-row .ex-name{ font-weight:600; flex:0 0 auto; min-width:220px; }
+  .exercise-row .ex-detail{ opacity:0.7; }
+  .equipment-note{ font-size:11.5px; opacity:0.55; font-style:italic; margin-bottom:6px; }
+  .stretch-block{ margin-top:20px; padding-top:18px; border-top:1px solid var(--line); }
+  .stretch-block h5{ font-size:14px; margin-bottom:4px; }
+  .stretch-block .sdesc{ font-size:12px; opacity:0.65; margin-bottom:12px; }
+  .stretch-list{ display:grid; grid-template-columns:repeat(2,1fr); gap:8px; }
+  .stretch-item{ font-size:12px; padding:8px 12px; background:var(--paper); border-radius:6px; }
+  .stretch-item b{ display:block; font-weight:600; }
+  .stretch-item span{ opacity:0.65; }
+
+  .program-block{ margin-top:56px; }
+  .program-block h2{ font-size:26px; margin-bottom:6px; }
+  .program-block .intro{ font-size:13px; opacity:0.7; margin-bottom:22px; max-width:640px; }
+  .weight-groups{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .weight-group{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px; font-size:12.5px; }
+  .weight-group b{ display:block; font-size:14px; margin-bottom:8px; }
+  .supp-grid, .rules-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .supp-card, .rule-card{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px; }
+  .supp-card h5, .rule-card h5{ font-size:13px; margin-bottom:8px; }
+  .supp-card p, .rule-card p{ font-size:12px; opacity:0.7; line-height:1.6; }
+
+  .tracker-week{ margin-bottom:16px; }
+  .tracker-week b{ display:block; font-size:12px; letter-spacing:0.06em; margin-bottom:8px; opacity:0.7; }
+  .tracker-boxes{ display:flex; gap:8px; }
+  .tracker-box{ width:38px; height:38px; border:1px solid var(--line); border-radius:6px; display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:12px; background:#fff; }
+  .tracker-box.done{ background:var(--green); border-color:var(--green); color:#fff; }
+  .program-closing{ text-align:center; background:#e9e4d4; border-radius:16px; padding:50px 30px; margin-top:56px; }
+  .program-closing h2{ font-size:30px; margin-bottom:12px; }
+  .program-closing .quote{ font-family:'Cormorant Garamond'; font-style:italic; font-size:19px; color:var(--green); margin-top:14px; }
+
+  @media (max-width:1200px){
+    .program-goals, .weight-groups, .supp-grid, .rules-grid{ grid-template-columns:repeat(2,1fr); }
+    .program-days, .warmup-items{ grid-template-columns:1fr; }
+    .stretch-list{ grid-template-columns:1fr; }
+  }
+  @media (max-width:768px){
+    .program-goals, .weight-groups, .supp-grid, .rules-grid{ grid-template-columns:1fr; }
+    .exercise-row{ flex-direction:column; gap:2px; }
+    .exercise-row .ex-name{ min-width:0; }
+  }
+
   /* MODALS */
   .modal{ display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:100; align-items:center; justify-content:center; }
   .modal.open{ display:flex; }
@@ -231,6 +308,10 @@
         <div class="nav-item" id="accountNav" style="display:none;" onclick="goPage('account')">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="10" r="3"/><path d="M6 19c1.5-3 4-4.5 6-4.5s4.5 1.5 6 4.5"/></svg>
           <span data-i18n="nav.account">Акаунт</span>
+        </div>
+        <div class="nav-item" id="programNav" style="display:none;" onclick="goPage('program')">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9v6M4 8v8M18 9v6M20 8v8M6 12h12"/></svg>
+          <span data-i18n="nav.program">Програма</span>
         </div>
         </nav>
       </div>
@@ -499,6 +580,21 @@
       </div>
     </section>
 
+    <!-- PROGRAM (unlocked content) -->
+    <section id="page-program" class="page">
+      <div class="section">
+        <div id="programLocked">
+          <h2 data-i18n="programLock.title">Програма ще не розблокована</h2>
+          <p class="section-sub" data-i18n="programLock.sub">Придбай Body Reset, щоб відкрити повний план тренувань</p>
+          <button class="btn-primary" onclick="goPage('products')" data-i18n="programLock.cta" style="margin-top:10px;">Перейти до продуктів</button>
+        </div>
+        <div id="programContent" style="display:none;">
+          <p class="program-langnote" data-i18n="programLock.langNote">Повна програма тренувань наразі доступна російською мовою — мовою, якою її створив тренер.</p>
+          <div id="programRoot"></div>
+        </div>
+      </div>
+    </section>
+
     <footer class="site-footer">
       <a class="footer-instagram" href="https://www.instagram.com/rudikisa23_yuliia_?igsh=MWVsaDMzeWhnNDk0dA%3D%3D&utm_source=qr" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg>
@@ -566,7 +662,7 @@ const PROMO_CODE = "FITMARATHON";
 
 const translations = {
   uk: {
-    nav:{home:"Головна",about:"Про клуб",products:"Продукти",blog:"Блог",contacts:"Контакти",account:"Акаунт",menu:"Меню"},
+    nav:{home:"Головна",about:"Про клуб",products:"Продукти",blog:"Блог",contacts:"Контакти",account:"Акаунт",menu:"Меню",program:"Програма"},
     sidebar:{quoteTitle:"Ти не одна.",quoteText:"Ми поруч на кожному твоєму етапі."},
     header:{login:"Увійти",logout:"Вийти"},
     hero:{script:"Твій баланс. Твоя сила. Твоє життя.",body:"Fit Balance — це клуб про усвідомлений підхід до тіла, харчування та відновлення. Тут ти знайдеш усе необхідне, щоб стати кращою версією себе.",cta:"Дивитись програми"},
@@ -604,7 +700,7 @@ const translations = {
       r1:"Сильне та підтягнуте тіло",r2:"Здорові харчові звички",r3:"Зменшення набряків",
       r4:"Покращення постави",r5:"Гармонія між тілом та самопочуттям",r6:"Результат без жорстких дієт і виснажливих тренувань"},
     products:{title:"Продукти та програми",sub:"Почни свою трансформацію",buyBtn:"Купити",
-      p1Title:"Body Reset",p1Desc:"12-тижнева трансформаційна подорож. Один тиждень за раз, послідовне відкриття програми."},
+      p1Title:"Body Reset",p1Desc:"4 тижні, 12 тренувань (3 рази на тиждень). Постава, спина, кор і сідниці — з детальним планом і трекером звичок."},
     blog:{title:"Блог",sub:"Поради, інсайти та натхнення",
       post1Title:"5 помилок постави, які ти робиш",post1Desc:"Дізнайся, як виправити типові проблеми з поставою, які викликають біль у спині та обмежують результат.",post1Date:"4 липня 2026",
       post2Title:"Міфи про харчування розвінчано",post2Desc:"Відділяємо факти від вигадки: що наука каже про харчування та успіх у фітнесі.",post2Date:"2 липня 2026"},
@@ -612,13 +708,14 @@ const translations = {
       emailValue:"[Вкажіть email]",locationLabel:"Локація",locationValue:"[Вкажіть локацію]",
       responseLabel:"Час відповіді",responseValue:"[Вкажіть час відповіді]"},
     account:{title:"Особистий кабінет",sub:"Твій шлях у фітнесі",body:"Увійди, щоб отримати доступ до своїх програм, відстежувати прогрес і спілкуватися з тренеркою."},
+    programLock:{title:"Програма ще не розблокована",sub:"Придбай Body Reset, щоб відкрити повний план тренувань",cta:"Перейти до продуктів",langNote:"Повна програма тренувань наразі доступна російською мовою — мовою, якою її створив тренер."},
     login:{title:"Вхід",password:"Пароль",submit:"Увійти",switchText:"Немає акаунта?",switchLink:"Зареєструватися"},
     register:{title:"Створити акаунт",name:"Ім'я",namePlaceholder:"Твоє ім'я",password:"Пароль",submit:"Створити акаунт",switchText:"Вже є акаунт?",switchLink:"Увійти"},
     promo:{title:"Введіть код доступу",desc:"Код доступу на 2 місяці. Введи його нижче, щоб розблокувати програму.",label:"Код доступу",submit:"Розблокувати",
       success:"Доступ відкрито! Тиждень 1 розблоковано. Проходь кожен тиждень, щоб рухатися далі.",error:"Невірний код. Спробуй ще раз."}
   },
   ru: {
-    nav:{home:"Главная",about:"О клубе",products:"Продукты",blog:"Блог",contacts:"Контакты",account:"Аккаунт",menu:"Меню"},
+    nav:{home:"Главная",about:"О клубе",products:"Продукты",blog:"Блог",contacts:"Контакты",account:"Аккаунт",menu:"Меню",program:"Программа"},
     sidebar:{quoteTitle:"Ты не одна.",quoteText:"Мы рядом на каждом твоём этапе."},
     header:{login:"Войти",logout:"Выйти"},
     hero:{script:"Твой баланс. Твоя сила. Твоя жизнь.",body:"Fit Balance — это клуб про осознанный подход к телу, питанию и восстановлению. Здесь ты найдёшь всё необходимое, чтобы стать лучшей версией себя.",cta:"Смотреть программы"},
@@ -656,7 +753,7 @@ const translations = {
       r1:"Сильное и подтянутое тело",r2:"Здоровые пищевые привычки",r3:"Уменьшение отёков",
       r4:"Улучшение осанки",r5:"Гармония между телом и самочувствием",r6:"Результат без жёстких диет и изнурительных тренировок"},
     products:{title:"Продукты и программы",sub:"Начни свою трансформацию",buyBtn:"Купить",
-      p1Title:"Body Reset",p1Desc:"12-недельное путешествие трансформации. Одна неделя за раз, последовательное открытие программы."},
+      p1Title:"Body Reset",p1Desc:"4 недели, 12 тренировок (3 раза в неделю). Осанка, спина, кор и ягодицы — с подробным планом и трекером привычек."},
     blog:{title:"Блог",sub:"Советы, инсайты и вдохновение",
       post1Title:"5 ошибок осанки, которые ты совершаешь",post1Desc:"Узнай, как исправить типичные проблемы с осанкой, которые вызывают боль в спине и ограничивают результат.",post1Date:"4 июля 2026",
       post2Title:"Мифы о питании развенчаны",post2Desc:"Отделяем факты от вымысла: что наука говорит о питании и успехе в фитнесе.",post2Date:"2 июля 2026"},
@@ -664,13 +761,14 @@ const translations = {
       emailValue:"[Укажите email]",locationLabel:"Локация",locationValue:"[Укажите локацию]",
       responseLabel:"Время ответа",responseValue:"[Укажите время ответа]"},
     account:{title:"Личный кабинет",sub:"Твой путь в фитнесе",body:"Войди, чтобы получить доступ к своим программам, отслеживать прогресс и общаться с тренером."},
+    programLock:{title:"Программа ещё не разблокирована",sub:"Приобрети Body Reset, чтобы открыть полный план тренировок",cta:"Перейти к продуктам",langNote:"Полная программа тренировок доступна на русском языке — языке, на котором её создал тренер."},
     login:{title:"Вход",password:"Пароль",submit:"Войти",switchText:"Нет аккаунта?",switchLink:"Зарегистрироваться"},
     register:{title:"Создать аккаунт",name:"Имя",namePlaceholder:"Ваше имя",password:"Пароль",submit:"Создать аккаунт",switchText:"Уже есть аккаунт?",switchLink:"Войти"},
     promo:{title:"Введите код доступа",desc:"Код доступа на 2 месяца. Введите его ниже, чтобы разблокировать программу.",label:"Код доступа",submit:"Разблокировать",
       success:"Доступ открыт! Неделя 1 разблокирована. Проходи каждую неделю, чтобы двигаться дальше.",error:"Неверный код. Попробуйте снова."}
   },
   en: {
-    nav:{home:"Home",about:"About",products:"Products",blog:"Blog",contacts:"Contacts",account:"Account",menu:"Menu"},
+    nav:{home:"Home",about:"About",products:"Products",blog:"Blog",contacts:"Contacts",account:"Account",menu:"Menu",program:"Program"},
     sidebar:{quoteTitle:"You are not alone.",quoteText:"We're with you at every stage."},
     header:{login:"Sign In",logout:"Log Out"},
     hero:{script:"Your balance. Your strength. Your life.",body:"Fit Balance is a club about a mindful approach to your body, nutrition, and recovery. Here you'll find everything you need to become the best version of yourself.",cta:"Explore Programs"},
@@ -708,7 +806,7 @@ const translations = {
       r1:"A strong, toned body",r2:"Healthy eating habits",r3:"Reduced water retention",
       r4:"Improved posture",r5:"Harmony between body and well-being",r6:"Results without strict diets or exhausting workouts"},
     products:{title:"Products & Programs",sub:"Start your transformation",buyBtn:"Purchase",
-      p1Title:"Body Reset",p1Desc:"A 12-week transformation journey. One week at a time, unlocked sequentially."},
+      p1Title:"Body Reset",p1Desc:"4 weeks, 12 workouts (3x/week). Posture, back, core, and glutes — with a full plan and habit tracker."},
     blog:{title:"Blog",sub:"Tips, insights, and inspiration",
       post1Title:"5 Posture Mistakes You're Making",post1Desc:"Learn how to fix common posture issues that cause back pain and limit your results.",post1Date:"July 4, 2026",
       post2Title:"Nutrition Myths Debunked",post2Desc:"Separating fact from fiction: what science says about nutrition and fitness success.",post2Date:"July 2, 2026"},
@@ -716,13 +814,14 @@ const translations = {
       emailValue:"[Add email]",locationLabel:"Location",locationValue:"[Add location]",
       responseLabel:"Response Time",responseValue:"[Add response time]"},
     account:{title:"My Account",sub:"Your fitness journey",body:"Log in to access your programs, track your progress, and message your coach."},
+    programLock:{title:"Program not unlocked yet",sub:"Purchase Body Reset to unlock the full training plan",cta:"Go to Products",langNote:"The full training program is currently available in Russian — the language it was created in by the coach."},
     login:{title:"Sign In",password:"Password",submit:"Sign In",switchText:"Don't have an account?",switchLink:"Register"},
     register:{title:"Create Account",name:"Name",namePlaceholder:"Your name",password:"Password",submit:"Create Account",switchText:"Already have an account?",switchLink:"Sign In"},
     promo:{title:"Enter Access Code",desc:"A 2-month access code. Enter it below to unlock the program.",label:"Access Code",submit:"Unlock",
       success:"Access granted! Week 1 unlocked. Complete each week to progress.",error:"Invalid code. Try again."}
   },
   es: {
-    nav:{home:"Inicio",about:"Sobre el club",products:"Productos",blog:"Blog",contacts:"Contacto",account:"Cuenta",menu:"Menú"},
+    nav:{home:"Inicio",about:"Sobre el club",products:"Productos",blog:"Blog",contacts:"Contacto",account:"Cuenta",menu:"Menú",program:"Programa"},
     sidebar:{quoteTitle:"No estás sola.",quoteText:"Estamos contigo en cada etapa."},
     header:{login:"Iniciar sesión",logout:"Cerrar sesión"},
     hero:{script:"Tu equilibrio. Tu fuerza. Tu vida.",body:"Fit Balance es un club sobre un enfoque consciente del cuerpo, la nutrición y la recuperación. Aquí encontrarás todo lo necesario para convertirte en tu mejor versión.",cta:"Ver programas"},
@@ -760,7 +859,7 @@ const translations = {
       r1:"Un cuerpo fuerte y tonificado",r2:"Hábitos alimenticios saludables",r3:"Reducción de la retención de líquidos",
       r4:"Mejora de la postura",r5:"Armonía entre el cuerpo y el bienestar",r6:"Resultados sin dietas estrictas ni entrenamientos agotadores"},
     products:{title:"Productos y programas",sub:"Comienza tu transformación",buyBtn:"Comprar",
-      p1Title:"Body Reset",p1Desc:"Un viaje de transformación de 12 semanas. Una semana a la vez, desbloqueo secuencial."},
+      p1Title:"Body Reset",p1Desc:"4 semanas, 12 entrenamientos (3 veces por semana). Postura, espalda, core y glúteos — con plan completo y seguimiento de hábitos."},
     blog:{title:"Blog",sub:"Consejos, ideas e inspiración",
       post1Title:"5 errores de postura que estás cometiendo",post1Desc:"Descubre cómo corregir problemas posturales comunes que causan dolor de espalda y limitan tus resultados.",post1Date:"4 de julio de 2026",
       post2Title:"Mitos de la nutrición desmentidos",post2Desc:"Separando los hechos de la ficción: lo que dice la ciencia sobre la nutrición y el éxito en el fitness.",post2Date:"2 de julio de 2026"},
@@ -768,11 +867,45 @@ const translations = {
       emailValue:"[Añade tu email]",locationLabel:"Ubicación",locationValue:"[Añade tu ubicación]",
       responseLabel:"Tiempo de respuesta",responseValue:"[Añade el tiempo de respuesta]"},
     account:{title:"Mi cuenta",sub:"Tu camino fitness",body:"Inicia sesión para acceder a tus programas, seguir tu progreso y contactar con tu entrenadora."},
+    programLock:{title:"Programa aún no desbloqueado",sub:"Compra Body Reset para desbloquear el plan de entrenamiento completo",cta:"Ir a Productos",langNote:"El programa de entrenamiento completo está disponible actualmente en ruso, el idioma en el que lo creó la entrenadora."},
     login:{title:"Iniciar sesión",password:"Contraseña",submit:"Iniciar sesión",switchText:"¿No tienes cuenta?",switchLink:"Regístrate"},
     register:{title:"Crear cuenta",name:"Nombre",namePlaceholder:"Tu nombre",password:"Contraseña",submit:"Crear cuenta",switchText:"¿Ya tienes cuenta?",switchLink:"Iniciar sesión"},
     promo:{title:"Introduce el código de acceso",desc:"Código de acceso de 2 meses. Introdúcelo para desbloquear el programa.",label:"Código de acceso",submit:"Desbloquear",
       success:"¡Acceso concedido! Semana 1 desbloqueada. Completa cada semana para avanzar.",error:"Código incorrecto. Inténtalo de nuevo."}
   }
+};
+
+const PROGRAM = {
+  title:"ПРОГРАММА ТРАНСФОРМАЦИИ", subtitle:"4 недели • 3 тренировки в неделю", tagline:"Красивая осанка · Рельефная спина · Сильный кор · Упругие ягодицы",
+  goals:{"intro": "Эта программа создана специально для тебя — с учётом твоих особенностей, ритма жизни и целей. Каждая тренировка — это шаг навстречу телу, о котором ты мечтаешь: гармоничному, сильному и по-настоящему красивому.", "items": [{"title": "ПЛЕЧИ И ОСАНКА", "desc": "Раскрываем плечевой пояс, выравниваем осанку — ты буквально начнёшь держаться иначе"}, {"title": "СПИНА", "desc": "Формируем красивый рельеф спины и мягко работаем с проявлениями лордоза"}, {"title": "КОР И ТАЗ", "desc": "Укрепляем глубокие мышцы кора и обеспечиваем стабильность тазового пояса"}, {"title": "ЯГОДИЦЫ", "desc": "Подтягиваем и прорабатываем ягодицы для красивого, упругого силуэта"}]},
+  plan:{"weeksLabel": "4 НЕДЕЛИ", "freqLabel": "3 ТРЕНИРОВКИ В НЕДЕЛЮ", "intro": "Каждая неделя состоит из трёх целевых тренировок, распределённых равномерно. Это оптимальный ритм для восстановления и прогресса.", "days": [{"day": "ПОНЕДЕЛЬНИК", "focus": "Спина: растяжка грудного отдела, раскрытие плеч"}, {"day": "СРЕДА", "focus": "Ягодицы : активация и растяжка"}, {"day": "ПЯТНИЦА", "focus": "Кор : укрепление и растяжка"}]},
+  warmup:{"title": "РАЗОГРЕВ ПЕРЕД ТРЕНИРОВКОЙ", "intro": "Правильный разогрев — залог эффективной и безопасной тренировки. Выбери один из вариантов на  20 минут :", "items": [{"label": "АКТИВНОСТЬ", "detail": "Ходьба на высоком подъеме / Ступеньки / Степпер / Велосипед"}, {"label": "ПУЛЬС", "detail": "Следи, чтобы пульс не превышал 140 ударов в минуту"}, {"label": "ГИДРАТАЦИЯ", "detail": "Пей электролитную или минерализованную воду"}]},
+  weeks:[
+    {number:1, workouts:[
+      {"week": "Неделя 1", "title": "ТРЕНИРОВКА  1 \"СПИНА \"", "intro": "Сегодня работаем над мышцами спины, улучшаем осанку и раскрываем грудной отдел. Выполняй упражнения спокойно, концентрируясь на качестве техники, а не на скорости.", "tip": "Следи за дыханием: выдох на усилии, вдох на расслаблении.", "exerciseHeading": "ОСНОВНЫЕ УПРАЖНЕНИЯ", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. ТЯГА ГАНТЕЛЕЙ В НАКЛОНЕ", "detail": "3 × 12 | Примечание: контроль поясницы,пресc зажат!"}, {"name": "2. РАЗВЕДЕНИЕ РУК В НАКЛОНЕ", "detail": "3 × 12 | Примечание: подем на выдохе"}, {"name": "3.ТЯГА РЕЗИНКИ К ПОЯСУ", "detail": "3 × 20| Примечание: не прогибай поясницу"}, {"name": "4.ОБРАТНАЯ БАБОЧКА", "detail": "4 × 20| Примечание: пресс зажат"}, {"name": "5.ПОДЕМ НОГ", "detail": "3 × 12 | Примечание: на выдохе подьем"}, {"name": "6.ТЯГА ВЕРХНЕГО БЛОКА", "detail": "3 × 10 | Примечание: узкий обратный хват"}, {"name": "7.СКРУЧИВАНИЯ НА ПОЛУ", "detail": "3 × 12 каждая | Примечание: на выдохе подьем"}, {"name": "8.СКРУЧМВАНИЯ СИДЯ", "detail": "3 × 15 каждая | Примечание: на выдохе"}], "equipment": ["Вес по 2 гантели по 2 кг", "Вес по 2 гантели по 2 кг", "Резинка лайт", "Вес 20 кг"], "stretchTitle": "РАСТЯЖКА НА РАСКРЫТИЕ ПЛЕЧЕЙ", "stretchDesc": "Выполняй каждое упражнение плавно, без рывков. Удерживай каждую позицию 30–40 секунд, дыши глубоко.", "stretches": [{"name": "РАСКРЫТИЕ ГРУДИ", "detail": "30–40 сек · Руки за спиной, грудь вперёд"}, {"name": "РАСТЯЖКА У СКАМЬИ", "detail": "30 сек 4 РАЗА"}, {"name": "НАКЛОН", "detail": "30 сек · 3 РАЗА"}, {"name": "РАСКРЫТИЕ", "detail": "40 сек · 4 раза"}, {"name": "РОТАЦИЯ БОКОВАЯ", "detail": "По 10 повторений в каждую сторону"}, {"name": "РОТАЦИЯ ГРУДНОГО ОТДЕЛА", "detail": "По 10 повторений в каждую сторону"}]},
+      {"week": "Неделя 1", "title": "ТРЕНИРОВКА 2 \"ЯГОДИЦЫ\"", "intro": "Сегодня фокусируемся на ягодицах. Главное — чувствовать целевые мышцы в каждом движении. Не торопись, работай медленно и осознанно.", "tip": "Активируй ягодицы перед тренировкой — 2 мин лёгких ягодичных мостов без веса.", "exerciseHeading": "УПРАЖНЕНИЯ — ЯГОДИЦЫ", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. ЯГОДИЧНЫЙ МОСТ", "detail": "3 × 20| Примечание : с вытяжением рук"}, {"name": "2. РУМЫНСКАЯ ТЯГА", "detail": "3 × 12 | Примечание: пресс зажат"}, {"name": "3. ОТВЕДЕНИЕ НОГИ С РЕЗИНКОЙ", "detail": "3 × 15 каждая | Примечание: зажат пресс не прогибай спину"}, {"name": "4. СУМО-ПРИСЕДАНИЯ", "detail": "3 × 12–15 | Примечание: без веса_"}, {"name": "5.ОБРАТНЫЙ ПОСТИК", "detail": "3 × 10 | Примечание: на выдохе"}, {"name": "6. ПОДЬЕМ НОГ", "detail": "3 × 12| Примечание: низко не опускай ноги"}, {"name": "7. ОТВЕДЕНИЕ НОГИ НАЗАД В БОК", "detail": "3 × 15 каждая | Примечание: не прогибай спину пресс зажат"}, {"name": "8. РАЗВИДЕНИЕ ЛЕЖА", "detail": "4 × 20 | Примечание: поясница прижата к полу"}], "equipment": ["Вес 6 кг", "Резинка средняя", "Вес 6 кг"], "stretchTitle": "РАСТЯЖКА — ЯГОДИЦЫ И БЁДРА", "stretchDesc": "Завершаем тренировку восстановительной растяжкой. Она снижает крепатуру и улучшает гибкость. Каждую позицию удерживай 30–40 секунд.", "stretches": [{"name": "ТЯГА НОГИ", "detail": "40 сек на каждую 4 раза Глубокое растяжения квадры"}, {"name": "ЦИФРА 4 СТОЯ", "detail": "30 сек каждая 4 раза"}, {"name": "НИЗКИЙ ВЫПАД", "detail": "30 сек каждая Растяжка сгибателей бедра"}, {"name": "НАКЛОН ВПЕРЁД СИДЯ", "detail": "40 сек 4 раза Задняя поверхность бедра"}, {"name": "СКРУТКА СИДЯ", "detail": "30 раз на каждую сторону Поясница и ягодицы"}, {"name": "БАБОЧКА", "detail": "40 сек  Внутренняя поверхность бёдер"}]},
+      {"week": "Неделя 1", "title": "ТРЕНИРОВКА 3 — КОР + РАСТЯЖКА", "intro": "Сегодня работаем над глубокими мышцами кора и стабильностью таза. Эти мышцы — основа красивой осанки и защита позвоночника. Работай медленно и точно.", "tip": "Все упражнения на кор выполняй с нейтральным положением позвоночника.", "exerciseHeading": "УПРАЖНЕНИЯ — КОР", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. ПЛАНКА НА ЛОКТЯХ", "detail": "30–40 сек × 3 | Примечание: с позиции"}, {"name": "2. ПОДЕМ НОГ НА СКАМЬЕ", "detail": "3 × 10 каждая сторона | Примечание: с утяжелителями"}, {"name": "3. ПОДЪЁМ НОГ ЛЁЖА", "detail": "3 × 12 | Примечание: низко ноги не опускай"}, {"name": "4. ВЕЛОСИПЕД", "detail": "3 × 20 (10 каждая) | Примечание: через выдох"}, {"name": "5. БОКОВАЯ ПЛАНКА", "detail": "30 сек × 3 каждая |"}, {"name": "6. НАКЛОНЫ", "detail": "3 × 10 | Примечание: НА ВЫДОХЕ"}, {"name": "7. СКРУЧИВАНИЯ С ФИКСАЦИЕЙ", "detail": "3 × 12 | Примечание: подбородок тянем в верх"}, {"name": "8. СКУРУИВАНИЯ ПОЛУ СИДЯ", "detail": "10 раз | Примечание: выдох на подьеме"}], "equipment": [], "stretchTitle": "РАСТЯЖКА — КВАДРИЦЕПС", "stretchDesc": "Финальная растяжка закрывает первую неделю. Почувствуй заслуженный отдых — дыши глубоко и расслабься в каждой позиции.", "stretches": [{"name": "1", "detail": "30 сек каждая"}, {"name": "2", "detail": "30–40 сек каждая"}, {"name": "6", "detail": "1–2 мин · Полное расслабление"}, {"name": "3", "detail": "30 сек каждая"}, {"name": "5", "detail": "30 сек каждая"}, {"name": "4", "detail": "30–40 сек каждая"}]},
+    ]},
+    {number:2, workouts:[
+      {"week": "Неделя 2", "title": "ТРЕНИРОВКА 4 — СПИНА", "intro": "Вторая неделя — время усилить нагрузку. Сегодня снова фокус на спине: добавляем разнообразие в упражнения и чуть увеличиваем интенсивность. Следи за техникой!", "tip": "Если упражнения первой недели давались легко — можно немного увеличить вес.", "exerciseHeading": "УПРАЖНЕНИЯ — СПИНА", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. ОТЖИМАНИЯ ОТ СКАМЬИ", "detail": "3 × 15 | Примечание: контролируй прогиб_"}, {"name": "2. Т ТЯГА ШИРОКИМ ХВАТОМ", "detail": ""}, {"name": "3. ОБРАТНЫЕ ПОДТЯГИВАНИЯ", "detail": "3 × 12 | Примечание: через0 выдох живот напрягай"}, {"name": "4. ТЯГА ГРИФА ЛЕЖА", "detail": "3 × 10 (3 сек задержка) | Примечание: прес напрягается на выдохе"}, {"name": "5. ТЯГА НИЖНЕГО БЛОКА", "detail": "3 × 12 | Примечание: прес зажат"}, {"name": "6. ПРОТЯЖКА В БЛОКЕ", "detail": "3 × 12 | Примечание: узкий хват _"}, {"name": "7. ПОДЕМ РУК", "detail": "3 × 15 | Примечание: активно"}, {"name": "8. РАСКРЫТИЕ ГРУДНОГО", "detail": "3 × 15 | Примечание: поясница не должна чувствоваться"}], "equipment": ["3 × 15 | Примечание: контролируй прогиб_", "ВЕС 5 КГ", "ВЕС 5 КГ", "ВЕС 15 КГ", "ВЕС 15 КГ"], "stretchTitle": "РАСТЯЖКА — ГРУДНОЙ ОТДЕЛ И ПЛЕЧИ", "stretchDesc": "После активной работы спины уделяем внимание грудному отделу и плечам. Не торопись — пусть тело полностью восстановится.", "stretches": [{"name": "СКЛАДКА", "detail": "30–40 сек"}, {"name": "НАКЛОНЫ", "detail": "30 сек каждая ·"}, {"name": "АКТИВНЫЙ РЕБЕНОК", "detail": "30 раз"}, {"name": "ПОЗА РЕБЁНКА С ДВИЖЕНИЕМ ТАЗА", "detail": "30 раз"}]},
+      {"week": "Неделя 2", "title": "ТРЕНИРОВКА 5 — ЯГОДИЦЫ", "intro": "Неделя 2, тренировка на ягодицы — усиливаем работу и добавляем новые вариации. Фокусируйся на пиковом сокращении в каждом повторении. Твоё тело меняется!", "tip": "Пиковое сокращение в верхней точке — сжимай ягодицы на 1–2 секунды.", "exerciseHeading": "УПРАЖНЕНИЯ — ЯГОДИЦЫ", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. ЯГОДИЧНЫЙ МОСТ НА МЯЧЕ", "detail": "3 × 20 | Примечание: МОЖНО С ВЕСОМ"}, {"name": "2. ПОДЬЕМ НОГ НА СКАМЬЕ", "detail": "3 × 10 | Примечание: на выдохе"}, {"name": "3. СТАНОВАЯ ТЯГА В СМИТТА", "detail": "3 × 10 | Примечание: разгибайся до конца"}, {"name": "4. ОТВЕДЕНИЕ НОГИ СТОЯ НА БЛОКЕ", "detail": "3 × 15 каждая | Примечание: если нет блока с уутяжелителем"}, {"name": "5. ОБРАТНАЯ ГИПЕРЕСТЕНЗИЯ", "detail": "3 × 15 | Примечание: или на лавке с гантелей"}, {"name": "6. ПРИСЕДАНИЯ", "detail": "3 × 15 | Примечание: разгибай квадрицепс на подеме_"}, {"name": "7. РАЗВЕДЕНИЕ НОГ", "detail": "3 × 20 | Примечание: поясница зажата в пол"}, {"name": "8. МАХИ В ПЛАНКЕ", "detail": "3 × 20 (10 кажд) | Примечание: КОНТРОЛЬ ПОЯСНИЦЫ_"}], "equipment": ["ВЕС 10 КГ", "ВЕС 10 КГ", "ВЕС 3 КГ", "ВЕС гантели по 2 КГ", "ВЕС 10 КГ"], "stretchTitle": "РАСТЯЖКА — ЯГОДИЦЫ И БЁДРА", "stretchDesc": "После интенсивной нагрузки важно качественно растянуть мышцы. Удержи каждую позицию, не торопись — восстановление так же важно, как и сама тренировка.", "stretches": [{"name": "1", "detail": "40 сек"}, {"name": "2", "detail": "30 сек каждая · Передняя поверхность бедра"}, {"name": "3", "detail": "30 сек каждая"}, {"name": "4", "detail": "40 сек каждая"}, {"name": "5", "detail": "40 сек"}, {"name": "6", "detail": "30 сек"}]},
+      {"week": "Неделя 2", "title": "ТРЕНИРОВКА 6 — КОР + РАСТЯЖКА", "intro": "Завершаем вторую неделю работой с кором. Добавляем усложнённые вариации планок и движения с нестабильностью. Чувствуй, как кор становится всё сильнее!", "tip": "Контролируй поясницу — она не должна проваливаться или выгибаться.", "exerciseHeading": "УПРАЖНЕНИЯ — КОР", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. МОСТ С МЯЧЕМ", "detail": "3 × 10 | Примечание: ягодицу зажать"}, {"name": "2. ПОДЕМ НОГ НОЖНИЦЫ", "detail": "3 × 20 | Примечание: на выдохе"}, {"name": "3. БОКОВАЯ ПЛАНКА С ОПУСКАНИЕМ БЕДРА", "detail": "3 × 12 каждая | Примечание: контроль поясницы"}, {"name": "4. ПОДЕМ НОГ", "detail": "3 × 12 | Примечание: не опускать низко ноги"}, {"name": "5. ПОДЕМ ТАЗА", "detail": "3 × 20 | Примечание: глубокий выдох на подьеме"}, {"name": "6. (МЕДЛЕННО)", "detail": "3 × 10 каждая | Примечание: ВЫДОХ КАЖДОЙ НОГОЙ"}, {"name": "7. РОТАЦИЯ (МЕДЛЕННО)", "detail": "3 × 20 КАЖДОЙ |"}, {"name": "8. СКРУЧИВАНИЯ", "detail": "5 × 20 |"}], "equipment": [], "stretchTitle": "РАСТЯЖКА — ГОЛЕНЬ И ПОЯСНИЦА", "stretchDesc": "Вторая неделя завершена! Ты молодец. Восстанови тело этой мягкой растяжкой и готовься к новому витку прогресса на следующей неделе.", "stretches": [{"name": "1", "detail": "30 сек каждая ·"}, {"name": "2", "detail": "40 сек ·"}, {"name": "3", "detail": "30 сек каждая ·"}, {"name": "4", "detail": "40 сек каждая ·"}, {"name": "5", "detail": "8–10 повторений ·"}, {"name": "6", "detail": "30 сек каждая ·"}]},
+    ]},
+    {number:3, workouts:[
+      {"week": "Неделя 3", "title": "ТРЕНИРОВКА 7 — СПИНА", "intro": "Третья неделя — ты уже чувствуешь результат. Продолжаем прогрессировать: увеличиваем нагрузку или количество повторений. Рельеф спины становится заметнее с каждой тренировкой.", "tip": "Обрати внимание на симметрию — работай обеими сторонами одинаково.", "exerciseHeading": "УПРАЖНЕНИЯ — СПИНА - ПЛЕЧИ", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. ТЯГА С РЕЗИНКОЙ ОДНОЙ РУКОЙ", "detail": "3 × 12 каждая | Примечание: ПРЕС ЗАЖАТ"}, {"name": "2. ТЯГА", "detail": ""}, {"name": "3. ЖИМ ГРИФА ЗА ГОЛОВОЙ", "detail": "3 × 12 | Примечание: ПРЕС РАБОТАЕТ"}, {"name": "4. ТЯГА РЕЗИНКИ", "detail": "3 × 15 | Примечание: ЗАЖАТЬ ЯГОДИЦУ СТОЯ"}, {"name": "5. ТЯГА В БЛОКЕ НА ЗАДНЮЮ ДЕЛЬТУ", "detail": "3 × 12 |"}, {"name": "6. ТЯГА НАКРЕСТ", "detail": "3 × 10 | Примечание: КОНТРОЛЬ ПОЯСНИЦЫ"}, {"name": "7. ПОДТЯГИВАНИЯ В ТРХ", "detail": "3 × 10 | Примечание: ПОД НАКЛОНОМ"}, {"name": "8. ОБРАТНАЯ РАСКРЫТИЕ", "detail": "30–40 сек × 3 | Примечание: РАСКРЫТИЕ ПЛЕЧЕЙ"}], "equipment": ["3 × 12 каждая | Примечание: ПРЕС ЗАЖАТ", "ВЕС 15 КГ", "ВЕС 3 КГ", "ВЕС НЕ БОЛЬШЕ 4 КГ", "РЕЗИНКА МЕДИУМ", "РЕЗИНКА МЕДИУМ", "РЕЗИНКА МЕДИУМ"], "stretchTitle": "РАСТЯЖКА — СПИНА И ПЛЕЧИ", "stretchDesc": "После интенсивной спиновой тренировки уделяем особое внимание растяжке. Эти упражнения помогут сохранить гибкость и ускорить восстановление.", "stretches": [{"name": "1", "detail": "30 сек каждая · Раскрытие груди"}, {"name": "2", "detail": "30 сек · Грудные и передние дельты"}, {"name": "3", "detail": "30 сек каждая · Боковые части спины"}, {"name": "4", "detail": "20 сек каждая · Верхняя трапеция"}, {"name": "5", "detail": "30 сек · Раскрытие плечевых суставов"}, {"name": "6", "detail": "30 сек каждая · Межпозвоночные суставы"}]},
+      {"week": "Неделя 3", "title": "ТРЕНИРОВКА 8 — ЯГОДИЦЫ", "intro": "Третья неделя, тренировка на ягодицы — чувствуешь, как тело стало сильнее? Сегодня добавляем более сложные вариации и усиливаем контроль над движением.", "tip": "Концентрируйся не на весе, а на качестве сокращения мышцы.", "exerciseHeading": "УПРАЖНЕНИЯ — ЯГОДИЦЫ", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. ПРИСЕД ПОДЕМОМ ГРИФА", "detail": "3 × 12 |"}, {"name": "2. БОЛГАРСКИЕ ВЫПАДЫ В СТАТИКЕ", "detail": "3 × 10 каждая |"}, {"name": "3. РОТАЦИЯ С РЕЗИНКОЙ", "detail": "3 × 12 |каждая"}, {"name": "4. ГЛУБОКИЙ ПРИСЕД", "detail": "3 × 10 |"}, {"name": "5. СГИБАНИЕ С РЕЗИНКОЙ", "detail": "3 × 15 каждая |"}, {"name": "6. ТЯГА С ГРИФО НА 3 СЧЕТА", "detail": "3 × 12|"}, {"name": "7. ОТВЕДЕНИЕ В БЛОКЕ", "detail": "3 × 15 каждая |"}, {"name": "8. РАЗВИДЕНИЯ", "detail": "3 × 10"}], "equipment": ["ВЕС ПУСТОЙ ГРИФ", "РЕЗИНКА ЛАЙТ", "ВЕС 5 КГ", "РЕЗИНКА ЛАЙТ", "ВЕС 5 КГ", "ВЕС 10 КГ", "ВЕС 10 КГ"], "stretchTitle": "РАСТЯЖКА — ЯГОДИЦЫ И ТАЗОБЕДРЕННЫЙ СУСТАВ", "stretchDesc": "Три недели позади — твоё тело заслуживает бережного восстановления. Эта растяжка раскрывает тазобедренный сустав и снимает напряжение после нагрузки.", "stretches": [{"name": "1", "detail": "40 сек"}, {"name": "2", "detail": "40 сек"}, {"name": "3", "detail": "30 сек каждая ·"}, {"name": "6", "detail": "30 сек каждая ·"}, {"name": "4", "detail": "30 сек каждая ·"}, {"name": "5", "detail": "30 сек каждая ·"}]},
+      {"week": "Неделя 3", "title": "ТРЕНИРОВКА 9 — КОР + РАСТЯЖКА", "intro": "Третья неделя, финальная тренировка — вводим более сложные упражнения на кор. Ты уже заметно прогрессировала, и сегодня это проявится в качестве движений!", "tip": "Не задерживай дыхание в упражнениях — дыши ритмично.", "exerciseHeading": "УПРАЖНЕНИЯ — КОР", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. HOLLOW BODY HOLD", "detail": "3 × 20–30 сек |"}, {"name": "2. ПЛАНКА С ДВИЖЕНИЕМ РУК", "detail": "3 × 10 каждая |"}, {"name": "3. ПЛАНКА — С ДВИЖЕНИЕМ НОГ", "detail": "3 × 20"}, {"name": "4. ПОДЕМ КОРПУСА НА МЯЧЕ ИЛИ ЛАВКЕ", "detail": "3 × 20 |"}, {"name": "5. ПОДЪЁМ НОГ С МЕДЛЕННЫМ ОПУСКАНИЕМ", "detail": "3 × 10"}, {"name": "6. БЕРПИ", "detail": "3 × 10"}, {"name": "7. НАКЛОНЫ", "detail": "3 × 10"}], "equipment": [], "stretchTitle": null, "stretchDesc": null, "stretches": []},
+    ]},
+    {number:4, workouts:[
+      {"week": "Неделя 4", "title": "ТРЕНИРОВКА 10 — СПИНА", "intro": "Финальная неделя! Ты прошла долгий путь — 4 недели системной работы. Сегодня выкладываемся на 100%: последняя тренировка на спину этой программы. Ты справишься!", "tip": "Четвёртая неделя — финальный аккорд. Сделай каждое повторение идеальным.", "exerciseHeading": "УПРАЖНЕНИЯ — СПИНА", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. ТЯГА ШТАНГИ В НАКЛОНЕ", "detail": "3 × 10 |"}, {"name": "2. ТЯГА ОДНОЙ РУКОЙ", "detail": "3 × 12"}, {"name": "3. ПУЛОВЕР", "detail": "3 × 12 |"}, {"name": "4. ТЯГА ВЕРХНЕГО БЛОКА ШИРОКИМ ХВАТОМ", "detail": "3 × 12 | Примечание: ___________"}, {"name": "5. РАЗВОДКА С ГАНТЕЛЯМИ", "detail": "3 × 20 |"}, {"name": "6. ТЯГА К ПОЯСУ + ЗАДЕРЖКА", "detail": "3 × 10 (3 сек) |"}, {"name": "7. ТЯГА К ПОДБОРОДКУ", "detail": "3 × 12 |"}, {"name": "8. ОБРАТНАЯ БАБОЧКА (ФИНАЛЬНЫЙ ПОДХОД)", "detail": "3 × 15 |"}], "equipment": ["вес 4 кг штанга", "вес 15 кг", "вес 15 кг", "вес 15 кг", "вес 15 кг", "вес по 2 кг", "вес 10 кг"], "stretchTitle": "РАСТЯЖКА — ФИНАЛЬНАЯ ДЛЯ СПИНЫ", "stretchDesc": "Последняя растяжка для спины в этой программе. Позволь своему телу полностью расслабиться — ты заработала этот момент восстановления.", "stretches": [{"name": "1", "detail": "40 сек ·"}, {"name": "2", "detail": "30 сек"}, {"name": "3", "detail": "30 сек каждая"}, {"name": "5", "detail": "40 сек каждая"}, {"name": "6", "detail": "40 сек · Финальное раскрытие плеч"}, {"name": "4", "detail": "30 сек каждая"}]},
+      {"week": "Неделя 4", "title": "ТРЕНИРОВКА 11 — ЯГОДИЦЫ", "intro": "Финальная тренировка на ягодицы! Четыре недели работы — и сегодня ты чувствуешь разницу. Завершаем программу сильно. Выкладывайся полностью — это твой последний шанс в этом цикле!", "tip": "Сегодня можно немного увеличить вес — проверь свой прогресс за 4 недели!", "exerciseHeading": "УПРАЖНЕНИЯ — ЯГОДИЦЫ", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. ЯГОДИЧНЫЙ МОСТ", "detail": "4 × 12 |"}, {"name": "2.ОБРАТНАЯ ТЯГА В БЛОКЕ", "detail": "3 × 12 каждая |"}, {"name": "3. СТАНОВАЯ ТЯГА С ГАНТЕЛЯМИ", "detail": "3 × 12 |"}, {"name": "4. БОКОВЫЕ ВЫПАДЫ С ПРИСЕДОМ", "detail": "3 × 10 каждая |"}, {"name": "5. ОТВЕДЕНИЕ НОГИ НА БЛОКЕ (ДРОП-СЕТ)", "detail": "3 × 15 каждая |"}, {"name": "6. КИК-БЭК НА ТРЕНАЖЁРЕ", "detail": "3 × 15 каждая |"}, {"name": "7. МАХИ С РЕЗИНКОЙ", "detail": ""}, {"name": "8. ЗАШАГИВАНИЯ НА ОДНОЙ НОГЕ (ФИНАЛ)", "detail": "3 × 12 каждая |"}], "equipment": ["ВЕС 10 КГ ГАНТЕЛЬ", "ВЕС 20 КГ", "ВЕС 10 КГ", "ВЕС 10 КГ ГАНТЕЛЬ", "ВЕС 10 КГ", "3 × 15 каждая |"], "stretchTitle": "РАСТЯЖКА — ФИНАЛЬНАЯ ДЛЯ ЯГОДИЦ", "stretchDesc": "Последняя ягодичная растяжка программы. Позволь телу полностью отдать напряжение. Ты прошла этот путь — от первого занятия до финала. Гордись собой!", "stretches": [{"name": "1", "detail": "40 сек каждая · Максимальное раскрытие"}, {"name": "2", "detail": "1 мин · Внутренняя поверхность бёдер"}, {"name": "3", "detail": "40 сек каждая · Ягодицы и ротаторы"}, {"name": "4", "detail": "30 сек каждая · Сгибатели бедра"}, {"name": "5", "detail": "40 сек · Полная задняя поверхность"}, {"name": "6", "detail": "2–3 мин · Полное восстановление"}]},
+      {"week": "Неделя 4", "title": "ТРЕНИРОВКА 12 — КОР + РАСТЯЖКА", "intro": "Последняя тренировка программы! 12 занятий, 4 недели, 3 дня в неделю — ты сделала это. Финальная тренировка кора — выкладывайся полностью и наслаждайся каждым движением.", "tip": "Это твоя финальная тренировка. Сделай её особенной!", "exerciseHeading": "УПРАЖНЕНИЯ — КОР", "exerciseInstruction": "Сосредоточься на технике в каждом движении — сила приходит через контроль. Отдыхай 45–60 секунд между подходами.", "exercises": [{"name": "1. HOLLOW BODY ROCK", "detail": "3 × 20 |"}, {"name": "2. ПОДЪЁМ НОГ", "detail": "3 × 12"}, {"name": "3. ПЛАНКА — МОСТ", "detail": "3 × 12"}, {"name": "4. V-UP (V-ПОДЪЁМ)", "detail": "3 × 10 КАЖДАЯ |"}, {"name": "5. ПОДЕМ МЯЧА", "detail": "3 × 15 |"}, {"name": "6. СКРУЧИВАНИЯ (БЫСТРО)", "detail": "3 × 20 |"}, {"name": "7. ПОДЪЁМ НОГ", "detail": "3 × 15 |"}, {"name": "8. НАКЛОНЫ", "detail": "4 × 20 |"}], "equipment": [], "stretchTitle": "ФИНАЛЬНАЯ РАСТЯЖКА ПРОГРАММЫ", "stretchDesc": "Ты завершила программу! Эта растяжка — твоя награда. Расслабься полностью, почувствуй своё тело — оно изменилось за эти 4 недели.", "stretches": [{"name": "3", "detail": "40 сек каждая"}, {"name": "5", "detail": "40 сек"}, {"name": "6", "detail": "10 раз  ·  Ты сделала это. Отдыхай."}, {"name": "1", "detail": "40 сек каждая"}, {"name": "2", "detail": "40 сек каждая"}, {"name": "4", "detail": "40 сек каждая"}]},
+    ]},
+  ],
+  recommendations:{"title": "РЕКОМЕНДАЦИИ", "subtitle": "РАБОЧИЕ ВЕСА", "intro": "Правильный подбор веса — залог прогресса и безопасности. Помни: главная цель —  качество движения , а не большие веса. Начинай с меньшего и прогрессируй постепенно.", "groups": [{"label": "🦵  НОГИ / ЯГОДИЦЫ", "items": "Гантели до 6 кг Тренажёры 5–10 кг Резинка Medium"}, {"label": "🔙  СПИНА", "items": "Гантели до 2 кг Гриф 2–3 кг Тренажёры 10–15 кг Резинка Light"}, {"label": "💪 РУКИ", "items": "Не более 1 кг Фокус — на технике движения"}]},
+  nutrition:{"title": "ПИТАНИЕ И ДОБАВКИ", "subtitle": "РЕКОМЕНДУЕМЫЕ ДОБАВКИ", "intro": "Эти натуральные добавки помогут поддержать восстановление, снизить стресс и улучшить общее самочувствие. Перед применением проконсультируйся с врачом.", "items": [{"name": "РАСТОРОПША", "desc": "Поддержка печени и детоксикация организма"}, {"name": "ВОДА С ЭЛЕКТРОЛИТАМИ", "desc": "Восстановление водно-солевого баланса после тренировки"}, {"name": "АШВАГАНДА", "desc": "Снижение кортизола и управление стрессом"}, {"name": "РОДИОЛА РОЗОВАЯ", "desc": "Повышение выносливости и восстановление энергии"}]},
+  rules:{"title": "ВАЖНО ЗНАТЬ", "subtitle": "КЛЮЧЕВЫЕ РЕКОМЕНДАЦИИ", "intro": "Следуй этим правилам — они защитят тебя от травм и сделают прогресс устойчивым. Программа рассчитана на 2–3 месяца, после чего рекомендуется перейти на новый план.", "items": [{"name": "РАЗМИНКА ПЕРЕД КАЖДОЙ ТРЕНИРОВКОЙ", "desc": "5–10 минут лёгкого кардио и суставной гимнастики"}, {"name": "РАСТЯЖКА ПОСЛЕ ТРЕНИРОВКИ", "desc": "Снижает крепатуру и улучшает гибкость"}, {"name": "ВОДНЫЙ РЕЖИМ", "desc": "Минимум 1,5–2 литра воды в день"}, {"name": "КАЧЕСТВО ТЕХНИКИ ПРЕЖДЕ ВСЕГО", "desc": "При боли — остановись и обратись к специалисту"}]},
+  closing:{"title": "ТЫ СДЕЛАЛА ЭТО!", "body": "4 недели системной работы над собой. Ты инвестировала в своё здоровье, осанку и красоту — и результат уже есть.", "quote": "Не стремись к идеалу. Стремись к регулярности. Именно она меняет тело."}
 };
 
 let currentLang = localStorage.getItem('fbLang') || 'uk';
@@ -865,15 +998,112 @@ function closePromoModal() {
 function validatePromo() {
   const code = document.getElementById('promoInput').value.trim().toUpperCase();
   if (code === PROMO_CODE) {
-    alert(translations[currentLang].promo.success);
+    unlockProgram();
     closePromoModal();
+    goPage('program');
   } else {
     document.getElementById('promoError').textContent = translations[currentLang].promo.error;
     document.getElementById('promoError').style.display = 'block';
   }
 }
 
+let programUnlocked = localStorage.getItem('fbProgramUnlocked') === '1';
+
+function unlockProgram() {
+  programUnlocked = true;
+  localStorage.setItem('fbProgramUnlocked', '1');
+  document.getElementById('programNav').style.display = 'flex';
+  document.getElementById('programLocked').style.display = 'none';
+  document.getElementById('programContent').style.display = 'block';
+  renderProgram();
+}
+
+function renderProgram() {
+  const p = PROGRAM;
+  let html = '';
+  html += `<div class="program-hero"><div class="tag">${p.subtitle}</div><h2>${p.title}</h2><div class="tagline">${p.tagline}</div></div>`;
+  html += `<p style="font-size:13px;opacity:0.75;max-width:640px;margin-bottom:24px;">${p.goals.intro}</p>`;
+  html += `<div class="program-goals">` + p.goals.items.map(g => `<div class="program-goal"><h4>${g.title}</h4><p>${g.desc}</p></div>`).join('') + `</div>`;
+
+  html += `<div class="program-block"><h2>${p.plan.weeksLabel} · ${p.plan.freqLabel}</h2><p class="intro">${p.plan.intro}</p>`;
+  html += `<div class="program-days">` + p.plan.days.map(d => `<div class="program-day"><div class="d">${d.day}</div><p>${d.focus}</p></div>`).join('') + `</div></div>`;
+
+  html += `<div class="program-warmup"><h4>${p.warmup.title}</h4><p class="intro">${p.warmup.intro}</p>`;
+  html += `<div class="warmup-items">` + p.warmup.items.map(w => `<div class="wi"><b>${w.label}</b><span>${w.detail}</span></div>`).join('') + `</div></div>`;
+
+  html += `<div class="week-tabs">` + p.weeks.map((w,i) => `<button type="button" class="week-tab${i===0?' active':''}" onclick="showWeek(${w.number})" id="weekTab${w.number}">Неделя ${w.number}</button>`).join('') + `</div>`;
+
+  p.weeks.forEach((w,i) => {
+    html += `<div class="week-panel${i===0?' active':''}" id="weekPanel${w.number}">`;
+    w.workouts.forEach((wo, idx) => {
+      html += `<div class="workout-card"><div class="wk-label">${wo.week}</div><h3>${wo.title}</h3><p class="intro">${wo.intro}</p><div class="workout-tip">💡 ${wo.tip}</div>`;
+      html += `<div class="exercise-list">` + wo.exercises.map(e => `<div class="exercise-row"><span class="ex-name">${e.name}</span><span class="ex-detail">${e.detail}</span></div>`).join('') + `</div>`;
+      if (wo.equipment && wo.equipment.length) {
+        html += `<div class="equipment-note">Оборудование: ${wo.equipment.join(' · ')}</div>`;
+      }
+      if (wo.stretchTitle) {
+        html += `<div class="stretch-block"><h5>${wo.stretchTitle}</h5><div class="sdesc">${wo.stretchDesc}</div><div class="stretch-list">` + wo.stretches.map(s => `<div class="stretch-item"><b>${s.name}</b><span>${s.detail}</span></div>`).join('') + `</div></div>`;
+      }
+      html += `</div>`;
+    });
+    html += `</div>`;
+  });
+
+  html += `<div class="program-block"><h2>${p.recommendations.subtitle}</h2><p class="intro">${p.recommendations.intro}</p>`;
+  html += `<div class="weight-groups">` + p.recommendations.groups.map(g => `<div class="weight-group"><b>${g.label}</b>${g.items}</div>`).join('') + `</div></div>`;
+
+  html += `<div class="program-block"><h2>${p.nutrition.subtitle}</h2><p class="intro">${p.nutrition.intro}</p>`;
+  html += `<div class="supp-grid">` + p.nutrition.items.map(n => `<div class="supp-card"><h5>${n.name}</h5><p>${n.desc}</p></div>`).join('') + `</div></div>`;
+
+  html += `<div class="program-block"><h2>${p.rules.subtitle}</h2><p class="intro">${p.rules.intro}</p>`;
+  html += `<div class="rules-grid">` + p.rules.items.map(r => `<div class="rule-card"><h5>${r.name}</h5><p>${r.desc}</p></div>`).join('') + `</div></div>`;
+
+  html += `<div class="program-block"><h2>Трекер привычек</h2><p class="intro">Отмечай каждую выполненную тренировку — видеть свой прогресс мощнейший мотиватор.</p>`;
+  p.weeks.forEach(w => {
+    html += `<div class="tracker-week"><b>НЕДЕЛЯ ${w.number}</b><div class="tracker-boxes">`;
+    w.workouts.forEach((wo, idx) => {
+      const n = (w.number-1)*3+idx+1;
+      html += `<div class="tracker-box" id="trackerBox${n}" onclick="toggleTracker(${n})">${n}</div>`;
+    });
+    html += `</div></div>`;
+  });
+  html += `</div>`;
+
+  html += `<div class="program-closing"><h2>${p.closing.title}</h2><p>${p.closing.body}</p><div class="quote">${p.closing.quote}</div></div>`;
+
+  document.getElementById('programRoot').innerHTML = html;
+  const tracked = JSON.parse(localStorage.getItem('fbTracker') || '[]');
+  tracked.forEach(n => { const el = document.getElementById('trackerBox'+n); if (el) el.classList.add('done'); });
+}
+
+function showWeek(n) {
+  document.querySelectorAll('.week-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('weekPanel'+n).classList.add('active');
+  document.querySelectorAll('.week-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('weekTab'+n).classList.add('active');
+}
+
+function toggleTracker(n) {
+  let tracked = JSON.parse(localStorage.getItem('fbTracker') || '[]');
+  const el = document.getElementById('trackerBox'+n);
+  if (tracked.includes(n)) {
+    tracked = tracked.filter(x => x !== n);
+    el.classList.remove('done');
+  } else {
+    tracked.push(n);
+    el.classList.add('done');
+  }
+  localStorage.setItem('fbTracker', JSON.stringify(tracked));
+}
+
 applyLang(currentLang);
+
+if (programUnlocked) {
+  document.getElementById('programNav').style.display = 'flex';
+  document.getElementById('programLocked').style.display = 'none';
+  document.getElementById('programContent').style.display = 'block';
+  renderProgram();
+}
 </script>
 
 </body>
